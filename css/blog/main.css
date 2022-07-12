@@ -1,0 +1,81 @@
+#blog .container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.blog-inner {
+    background-color: rgb(10, 12, 18);
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+.blog-item figure {
+    border: 1px solid darkgrey;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.blog-item figure:hover {
+    border: 1px solid #ffffff;
+}
+.blog-item figure img {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+.blog-item figure:hover img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.blog-item .blog-text{
+    background-color: transparent;
+    padding: 0;
+}
+.blog-text{
+    color: rgb(152, 162, 179);
+    text-align: justify;
+}
+
+.blog-item a.author {
+    color: orange;
+    font-size: 16px;
+}
+
+.blog-text .blog-title a{
+    color: rgb(228, 231, 236);
+    font-weight: bold;
+}
+
+.blog-text .blog-title:hover{
+    text-decoration: underline;
+}
+
+.blog-text .blog-title:hover + .blog-item figure{
+    border: 1px solid #ffffff;
+}
+
+
+
+.second-pin .blog-text{
+    margin-top: 20px;
+}
+.second-pin .author{
+    color: orange;
+}
+.second-pin-title{
+    color: white;
+}
+
+.fist-pin{
+    margin-bottom: 20px;
+}
+
+.banner-ads{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.blog-page .blog-item.item {
+    padding-top: .5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid;
+}

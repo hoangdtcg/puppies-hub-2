@@ -1,0 +1,70 @@
+body{
+    font-family: "Roboto",sans-serif!important;
+    font-size: 100%;
+    background: #000000;
+    background-image: url("../../img/home/background.png");
+    /* Full height */
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body .container{
+    max-width: 1920px;
+}
+nav.navbar{
+    padding: 0;
+}
+
+.menu-list li a {
+    display: inline-block;
+    font-family: "Avo", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 5px;
+    margin-right: 30px;
+    color: #fff;
+}
+
+nav.main-menu.navbar-default {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 25px;
+    /* text-align: center; */
+    border-radius: 15px;
+}
+nav.main-menu.navbar-default li{
+    width:100%;
+    padding:5px 10px;
+    text-align:center;
+}
+
+
+.menu-list li a:hover{
+    background: -webkit-linear-gradient(yellow, orangered);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-fixed{
+    /*background-color: black;*/
+    border-bottom: 1px solid rgba(169, 169, 169, 0.51);
+}
+.nav-fixed #logo img {
+    height: 40px;
+    width: auto;
+}
+.pt-120{
+    padding-top: 120px;
+}
+
+.border-gradient {
+    border: double 3px transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(transparent, transparent), radial-gradient(circle at top left, #f00,#3020ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    display: inline-block;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+

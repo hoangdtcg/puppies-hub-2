@@ -1,0 +1,80 @@
+#leaderboard .container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+#leaderboard .daily {
+    padding: 30px;
+    background-color: rgb(0 0 0);
+    border: 3px solid orange;
+    border-radius: 20px;
+}
+
+#leaderboard .board-title {
+    font-family: 'Avo', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(yellow, orangered);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.tex-effect{
+    background: -webkit-linear-gradient(yellow, orangered);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#leaderboard tr.trader-rank {
+    color: white;
+    border: none;
+}
+
+#leaderboard .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#leaderboard .avatar img{
+    width: 100%;
+    height: 100%;
+}
+#leaderboard table td{
+    border-top:none ;
+}
+#leaderboard td.rank {
+    font-size: 20px;
+    font-weight: bold;
+}
+#leaderboard .trader-rank td{
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+
+}
+
+#leaderboard .table>tbody>tr>td,
+#leaderboard .table>tbody>tr>th,
+#leaderboard .table>tfoot>tr>td,
+#leaderboard .table>tfoot>tr>th,
+#leaderboard .table>thead>tr>td,
+#leaderboard .table>thead>tr>th {
+    vertical-align: middle;
+}
+
+
+.td-bg {
+    width: 100%;
+    /*height: 100%;*/
+    background-color: rgba(137, 137, 137 , .3);
+}
+
+td.trader-name {
+    width: 300px;
+}
+
+.hit-rate-title,.pnl-title {
+    font-size: 10px;
+}

@@ -1,0 +1,37 @@
+
+.banner{
+    width: 100%;
+}
+
+.banner .puppies-banner{
+    width: 100%;
+}
+
+.carousel img {
+    width: 60%;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 0 10px;
+}
+
+
+.owl-item > div {
+    cursor: pointer;
+    margin: 6% 8%;
+    transition: margin 0.4s ease;
+}
+.owl-item.center > div {
+    cursor: auto;
+    margin: 0;
+}
+.owl-item:not(.center) > div:hover {
+    opacity: .75;
+}
