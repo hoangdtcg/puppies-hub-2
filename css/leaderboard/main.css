@@ -123,3 +123,18 @@ table .trader-rank td{
 .trader-rank .pnl .pnl-value.is-low{
     color: darkred;
 }
+select.filter, button.see-more {
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(92, 92, 92 , .4);
+    color: #898989;
+    font-weight: bold;
+    margin-right: 10px;
+    border: none;
+}
+button.see-more{
+    padding: 4px 10px;
+    margin-right: 0;
+}
