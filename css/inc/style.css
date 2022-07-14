@@ -5,6 +5,11 @@
 	src: url("../../fonts/UTM AVOBOLD.TTF");
 }
 
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../../fonts/MONTSERRAT-BOLD.TTF");
+}
+
 html,
 body {
 	height: 100%;

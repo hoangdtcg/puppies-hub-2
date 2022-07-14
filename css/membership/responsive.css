@@ -1,0 +1,13 @@
+/*@media (min-width: 992px) {*/
+/*    .col-md-1-5 { width: 20%; }*/
+/*    .col-md-2-5 { width: 40%; }*/
+/*    .col-md-3-5 { width: 60%; }*/
+/*    .col-md-4-5 { width: 80%; }*/
+/*    .col-md-5-5 { width: 100%; }*/
+/*}*/
+
+@media (min-width: 1921px) {
+    .membership .card .card-body {
+        padding-top: 250px;
+    }
+}

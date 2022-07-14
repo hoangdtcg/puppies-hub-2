@@ -1,18 +1,23 @@
 .leaderboard .container{
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
 }
 
-.leaderboard .daily {
-    padding: 30px;
+.leaderboard .daily, .leaderboard .weekly {
+    padding: 15px;
     background-color: rgb(0 0 0);
     border: 3px solid orange;
     border-radius: 20px;
 }
 
+.leaderboard .weekly{
+    background-color: rgba(0, 0, 0, 0.3)!important;
+    margin-top: 50px;
+}
+
 .leaderboard .board-title {
     font-family: 'Avo', sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
     background: -webkit-linear-gradient(yellow, orangered);
     -webkit-background-clip: text;
@@ -49,8 +54,8 @@
     font-weight: bold;
 }
 .leaderboard .trader-rank td{
-    height: 48px;
-    line-height: 48px;
+    /*height: 48px;
+    line-height: 48px;*/
     text-align: center;
 
 }
@@ -61,9 +66,12 @@
 .leaderboard .table>tfoot>tr>th,
 .leaderboard .table>thead>tr>td,
 .leaderboard .table>thead>tr>th {
-    vertical-align: middle;
+    /*vertical-align: middle;*/
 }
 
+td.rank {
+    vertical-align: middle;
+}
 
 .td-bg {
     width: 100%;
@@ -77,4 +85,41 @@ td.trader-name {
 
 .hit-rate-title,.pnl-title {
     font-size: 10px;
+}
+
+table .trader-rank td{
+    padding: 5px!important;
+}
+
+.list-rank{
+    padding: 0 10px 0 0;
+}
+
+.trader-rank .trader-name .td-bg {
+    height: 60px;
+    line-height: 60px;
+}
+
+.trader-rank .td-bg {
+    border-radius: 5px;
+}
+
+.trader-rank .hit-rate .td-bg, .trader-rank .pnl .td-bg{
+    line-height: 25px;
+    font-weight: bold;
+    padding: 3px;
+    box-sizing: border-box;
+}
+.trader-rank .hit-rate .hit-rate-value{
+    color: orange;
+}
+
+.trader-rank .pnl .pnl-value{
+    color: green;
+}
+.trader-rank .pnl .pnl-value.is-high{
+    color: green;
+}
+.trader-rank .pnl .pnl-value.is-low{
+    color: darkred;
 }
