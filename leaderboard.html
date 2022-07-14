@@ -115,7 +115,9 @@
                                         <option value="">HITRATE</option>
                                         <option value="">PNL</option>
                                     </select>
-                                    <button class="btn btn-secondary see-more">See more...</button>
+                                    <button class="btn btn-secondary see-more" data-toggle="modal" data-target="#modal-leaderboard">
+                                        See more...
+                                    </button>
                                 </div>
                             </div>
                             <div class="row">
@@ -469,7 +471,9 @@
                                         <option value="">HITRATE</option>
                                         <option value="">PNL</option>
                                     </select>
-                                    <button class="btn btn-secondary see-more">See more...</button>
+                                    <button class="btn btn-secondary see-more" data-toggle="modal" data-target="#modal-leaderboard">
+                                        See more...
+                                    </button>
                                 </div>
                             </div>
                             <div class="row">
@@ -825,7 +829,307 @@
                 </div>
             </div>
         </div>
+        <div class="popup">
 
+            <!-- Modal -->
+            <div class="modal fade" id="modal-leaderboard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="board-title">DAILY LEADERBOARD</div>
+                                    </div>
+                                    <div class="col-5 text-right">
+                                        <select class="filter" name="">
+                                            <option value="">HITRATE</option>
+                                            <option value="">PNL</option>
+                                        </select>
+                                        <input class="search-trader" type="text" placeholder="Tìm kiếm...">
+                                    </div>
+                                    <div class="col-1 text-right">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-body">
+                            <div class="trader-list">
+                                <ul>
+                                    <li>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-1 p-0 text-right"><h5 class="modal-rank">01.</h5></div>
+                                                <div class="col-2 pt-1 pr-3 pl-3 pb-3">
+                                                    <div class="modal-avt">
+                                                        <img src="img/leaderboard/avt.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 p-1">
+                                                    <div class="trader-name">
+                                                        Trader Name
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-hitrate-title">HITRATE</p>
+                                                        <p class="modal-hitrate-value">+80.01%</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-pnl-title">PNL</p>
+                                                        <p class="modal-pnl-value is-low">-02.01%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-1 p-0 text-right"><h5 class="modal-rank">01.</h5></div>
+                                                <div class="col-2 pt-1 pr-3 pl-3 pb-3">
+                                                    <div class="modal-avt">
+                                                        <img src="img/leaderboard/avt.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 p-1">
+                                                    <div class="trader-name">
+                                                        Trader Name
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-hitrate-title">HITRATE</p>
+                                                        <p class="modal-hitrate-value">+80.01%</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-pnl-title">PNL</p>
+                                                        <p class="modal-pnl-value is-high">+02.01%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-1 p-0 text-right"><h5 class="modal-rank">01.</h5></div>
+                                                <div class="col-2 pt-1 pr-3 pl-3 pb-3">
+                                                    <div class="modal-avt">
+                                                        <img src="img/leaderboard/avt.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 p-1">
+                                                    <div class="trader-name">
+                                                        Trader Name
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-hitrate-title">HITRATE</p>
+                                                        <p class="modal-hitrate-value">+80.01%</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-pnl-title">PNL</p>
+                                                        <p class="modal-pnl-value is-low">-02.01%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-1 p-0 text-right"><h5 class="modal-rank">01.</h5></div>
+                                                <div class="col-2 pt-1 pr-3 pl-3 pb-3">
+                                                    <div class="modal-avt">
+                                                        <img src="img/leaderboard/avt.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 p-1">
+                                                    <div class="trader-name">
+                                                        Trader Name
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-hitrate-title">HITRATE</p>
+                                                        <p class="modal-hitrate-value">+80.01%</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-pnl-title">PNL</p>
+                                                        <p class="modal-pnl-value is-low">-02.01%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-1 p-0 text-right"><h5 class="modal-rank">01.</h5></div>
+                                                <div class="col-2 pt-1 pr-3 pl-3 pb-3">
+                                                    <div class="modal-avt">
+                                                        <img src="img/leaderboard/avt.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 p-1">
+                                                    <div class="trader-name">
+                                                        Trader Name
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-hitrate-title">HITRATE</p>
+                                                        <p class="modal-hitrate-value">+80.01%</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-pnl-title">PNL</p>
+                                                        <p class="modal-pnl-value is-low">-02.01%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-1 p-0 text-right"><h5 class="modal-rank">01.</h5></div>
+                                                <div class="col-2 pt-1 pr-3 pl-3 pb-3">
+                                                    <div class="modal-avt">
+                                                        <img src="img/leaderboard/avt.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 p-1">
+                                                    <div class="trader-name">
+                                                        Trader Name
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-hitrate-title">HITRATE</p>
+                                                        <p class="modal-hitrate-value">+80.01%</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-pnl-title">PNL</p>
+                                                        <p class="modal-pnl-value is-low">-02.01%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-1 p-0 text-right"><h5 class="modal-rank">01.</h5></div>
+                                                <div class="col-2 pt-1 pr-3 pl-3 pb-3">
+                                                    <div class="modal-avt">
+                                                        <img src="img/leaderboard/avt.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 p-1">
+                                                    <div class="trader-name">
+                                                        Trader Name
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-hitrate-title">HITRATE</p>
+                                                        <p class="modal-hitrate-value">+80.01%</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-pnl-title">PNL</p>
+                                                        <p class="modal-pnl-value is-low">-02.01%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-1 p-0 text-right"><h5 class="modal-rank">01.</h5></div>
+                                                <div class="col-2 pt-1 pr-3 pl-3 pb-3">
+                                                    <div class="modal-avt">
+                                                        <img src="img/leaderboard/avt.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 p-1">
+                                                    <div class="trader-name">
+                                                        Trader Name
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-hitrate-title">HITRATE</p>
+                                                        <p class="modal-hitrate-value">+80.01%</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 p-1">
+                                                    <div class="box-info">
+                                                        <p class="modal-pnl-title">PNL</p>
+                                                        <p class="modal-pnl-value is-low">-02.01%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="paginate">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <i class="fa fa-play fa-rotate-180" aria-hidden="true"></i>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <i class="fa fa-play" aria-hidden="true"></i>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 </div>
@@ -894,9 +1198,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </footer>
 
 
+
 <!--====== Javascripts & Jquery ======-->
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/popper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
 </body>
 </html>

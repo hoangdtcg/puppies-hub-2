@@ -68,3 +68,23 @@ nav.main-menu.navbar-default li{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+
+.paginate {
+    display: block;
+    margin: auto;
+}
+
+li.page-item a {
+    background-color: transparent;
+    color: #5c5c5c;
+    padding: 10px 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+li.page-item a:hover{
+    color: white;
+    background-color: #8989894d;
+    border-radius: 5px;
+}

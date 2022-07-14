@@ -36,6 +36,13 @@
     border: none;
 }
 
+.leaderboard tr.trader-rank .trader-name:hover .td-bg, .modal .trader-list li .trader-name:hover{
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+    cursor: pointer;
+}
+
 .leaderboard .avatar {
     width: 60px;
     height: 60px;
@@ -123,7 +130,7 @@ table .trader-rank td{
 .trader-rank .pnl .pnl-value.is-low{
     color: darkred;
 }
-select.filter, button.see-more {
+select.filter, button.see-more,.search-trader {
     /*height: 30px;*/
     /*line-height: 30px;*/
     padding: 5px 10px;
@@ -134,7 +141,107 @@ select.filter, button.see-more {
     margin-right: 10px;
     border: none;
 }
+
+.modal-header, .modal-body{
+    border-bottom: rgba(211, 211, 211, 0.5);
+}
+
+.modal-footer{
+    border-top: rgba(211, 211, 211, 0.5);
+    text-align: center;
+}
+.search-trader:focus{
+    border:1px solid rgba(255, 255, 255, 0.55);
+    color: white;
+}
 button.see-more{
     padding: 4px 10px;
     margin-right: 0;
+}
+
+.modal .trader-list ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    height: 30em;
+}
+
+.modal .trader-list li {
+    /*padding: 10px 5px;*/
+    margin: 2px;
+    background-color: transparent;
+    width: 50%;
+}
+
+.trader-list li p {
+    margin: 0;
+}
+
+.leaderboard .modal .modal-dialog {
+    width: 80%!important;
+    max-width: 1200px;
+}
+
+.modal-avt {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid orange;
+}
+.modal .trader-name {
+    text-align: center;
+    line-height: 3.5;
+    background-color: #8989894d;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+
+.modal-content {
+    background: black;
+    border-radius: 20px;
+}
+
+.modal {
+    background-color: rgba(128, 128, 128, .5);
+}
+
+.modal-header span {
+    color: white;
+}
+
+p.modal-hitrate-title, p.modal-pnl-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+p.modal-hitrate-value, p.modal-pnl-value {
+    font-weight: bold;
+    text-align: center;
+}
+p.modal-hitrate-value{
+    color: orange;
+}
+
+p.modal-pnl-value.is-low{
+    color: darkred;
+}
+p.modal-pnl-value.is-high{
+    color: green;
+}
+
+.modal .modal-rank {
+    height: 100%;
+    line-height: 3;
+    font-weight: bold;
+    color: white;
+}
+
+.box-info {
+    padding: 5px 5px;
+    background-color: #8989894d;
+    border-radius: 5px;
+    color: white;
 }
