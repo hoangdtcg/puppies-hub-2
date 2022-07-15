@@ -211,7 +211,7 @@ textarea {
 }
 #modal-trading .modal-content{
     background-color: black;
-    padding: 30px;
+    padding: 25px;
     border-radius: 20px;
 }
 
@@ -233,5 +233,16 @@ textarea {
 
 #modal-trading input:read-only{
     background-color: grey;
+    color: white;
+}
+
+.trading p.error {
+    color: #ff4500cc;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.trading p.price-value{
     color: white;
 }

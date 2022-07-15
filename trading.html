@@ -107,9 +107,12 @@
                             <div class="row">
                                 <div class="col-12 entry mt-3">
                                     <input type="text" class="form-control entry-value" placeholder="ENTRY">
+                                    <p class="error">ENTRY không được để trống</p>
+
                                 </div>
                                 <div class="col-12 stop-loss mt-3">
                                     <input type="text" class="form-control stop-loss-value" placeholder="STOP LOSS">
+                                    <p class="error">SL không được để trống</p>
                                 </div>
                                 <div class="col-12 take-profit mt-3">
                                     <div class="tp1 col-12 mb-2">
@@ -147,10 +150,15 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-12 mb-2 p-0">
+                                        <p class="error">Cần tối thiểu 1 TP</p>
+                                    </div>
                                 </div>
                                 <div class="col-12 risk mt-2">
                                     <input type="text" class="form-control risk-value text-center"
                                            placeholder="RISK (1 - 5%)">
+                                    <p class="error">RISK không được để trống</p>
+
                                 </div>
                             </div>
 
@@ -230,7 +238,9 @@
                                                             <p class="price-value">31,123.07</p>
                                                         </td>
                                                         <td>
-                                                            <button class="edit btn" data-toggle="modal" data-target="#modal-trading">EDIT</button>
+                                                            <button class="edit btn" data-toggle="modal"
+                                                                    data-target="#modal-trading">EDIT
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -243,7 +253,9 @@
                                                             <p class="price-value">31,123.07</p>
                                                         </td>
                                                         <td>
-                                                            <button class="edit btn" data-toggle="modal" data-target="#modal-trading">EDIT</button>
+                                                            <button class="edit btn" data-toggle="modal"
+                                                                    data-target="#modal-trading">EDIT
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -256,7 +268,9 @@
                                                             <p class="price-value">31,123.07</p>
                                                         </td>
                                                         <td>
-                                                            <button class="edit btn" data-toggle="modal" data-target="#modal-trading">EDIT</button>
+                                                            <button class="edit btn" data-toggle="modal"
+                                                                    data-target="#modal-trading">EDIT
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -269,7 +283,9 @@
                                                             <p class="price-value">31,123.07</p>
                                                         </td>
                                                         <td>
-                                                            <button class="edit btn" data-toggle="modal" data-target="#modal-trading">EDIT</button>
+                                                            <button class="edit btn" data-toggle="modal"
+                                                                    data-target="#modal-trading">EDIT
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -282,7 +298,9 @@
                                                             <p class="price-value">31,123.07</p>
                                                         </td>
                                                         <td>
-                                                            <button class="edit btn" data-toggle="modal" data-target="#modal-trading">EDIT</button>
+                                                            <button class="edit btn" data-toggle="modal"
+                                                                    data-target="#modal-trading">EDIT
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -318,7 +336,9 @@
                                                         </td>
 
                                                         <td>
-                                                            <button class="edit btn" data-toggle="modal" data-target="#modal-trading">EDIT</button>
+                                                            <button class="edit btn" data-toggle="modal"
+                                                                    data-target="#modal-trading">EDIT
+                                                            </button>
                                                         </td>
                                                     </tr>
 
@@ -338,7 +358,9 @@
                                                         </td>
 
                                                         <td>
-                                                            <button class="edit btn" data-toggle="modal" data-target="#modal-trading">EDIT</button>
+                                                            <button class="edit btn" data-toggle="modal"
+                                                                    data-target="#modal-trading">EDIT
+                                                            </button>
                                                         </td>
                                                     </tr>
 
@@ -396,15 +418,17 @@
                             </div>
                         </div>
                         <div class="modal-body">
-                            <di class="col-12">
+                            <div class="col-12">
                                 <div class="row">
                                     <div class="col-6 entry mt-1">
                                         <h3 class="modal-trading-title">ENTRY</h3>
-                                        <input type="text" class="form-control entry-value" placeholder="ENTRY" readonly>
+                                        <input type="text" class="form-control entry-value" placeholder="ENTRY"
+                                               readonly>
                                     </div>
                                     <div class="col-6 risk mt-1">
                                         <h3 class="modal-trading-title">RISK</h3>
-                                        <input type="text" class="form-control risk-value" placeholder="RISK (1 - 5%)" readonly>
+                                        <input type="text" class="form-control risk-value" placeholder="RISK (1 - 5%)"
+                                               readonly>
                                     </div>
                                     <div class="col-12 stop-loss mt-3">
                                         <h3 class="modal-trading-title">STOP LOSS</h3>
@@ -451,20 +475,25 @@
                                         <div class="tp1 col-12 mb-2">
                                             <div class="row">
                                                 <div class="col-12 p-0">
-                                                    <textarea style="background-color: #2f2f2f" class="w-100" rows="5" placeholder="Note of Command"></textarea>
+                                                    <textarea style="background-color: #2f2f2f" class="w-100" rows="5"
+                                                              placeholder="Note of Command"></textarea>
                                                 </div>
 
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </di>
+                            </div>
                         </div>
                         <!-- Modal footer -->
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng lệnh</button>
-                            <button type="button" class="btn btn-success" data-dismiss="modal">Cập nhật</button>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-md-4 col-12 mb-2"><button type="button" class="btn btn-block btn-secondary" data-dismiss="modal">Đóng</button></div>
+                                    <div class="col-md-4 col-12 mb-2"><button type="button" class="btn btn-block btn-danger" data-dismiss="modal">Đóng lệnh</button></div>
+                                    <div class="col-md-4 col-12 mb-2"><button type="button" class="btn btn-block btn-success" data-dismiss="modal">Cập nhật</button></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
