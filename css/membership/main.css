@@ -6,7 +6,7 @@
 }
 
 .membership-container {
-    background: #000 url(../assets/background_1.png);
+    background: #000 url(../../assets/background_1.png);
     background-size: cover;
     /* padding-top: 8.875rem; */
 }
@@ -157,4 +157,110 @@ img.premium{
 img.supreme
 {
     top: -10px!important;
+}
+
+.membership .modal-dialog{
+    width: 80%;
+    max-width: 900px;
+}
+
+
+
+.membership .modal-content{
+    background: #000000;
+    background-image: url("../../img/home/background.png");
+    /* Full height */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.membership .modal-header{
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+.membership p{
+    font-family: monospace, serif;
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+.membership h4.popup-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.membership p.popup-subtext {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.membership .popup-logo {
+    height: 100%;
+}
+.membership .popup-logo img{
+    height: 100%;
+}
+
+.membership .popup .content-header{
+    margin-bottom: 30px;
+}
+.membership .popup .content-main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #102221;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.membership .popup h4.instruct-title {
+    margin: 15px 0;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.membership .popup img.instruct-img {
+    margin: 15px 0;
+}
+.membership button.btn.btn-contact {
+    background-image: linear-gradient(to right, rgba(218, 129, 255, 0.8) 0%, rgba(239, 66, 8, 0.8) 51%, rgba(219, 122, 255, 0.8) 100%);
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.membership .popup .txId{
+    background-color: rgba(255, 255, 255, 0.2);
+    border:none;
+    color: white;
+}
+
+.membership .popup2 .p2-title-1 {
+    color:orange
+}
+.membership .popup2 .p2-title-2 {
+    color:lightgreen
+}
+.membership .popup2 .p2-title-3 {
+    color:lightgray
+}
+
+.membership .popup2 h3{
+    color:white;
+    font-family:monospace;
+    font-weight:bold;
+    margin-bottom: 5px;
+}
+.membership .popup2{
+    margin: 20px 0
 }

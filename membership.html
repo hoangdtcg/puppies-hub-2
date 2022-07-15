@@ -73,7 +73,6 @@
 <div class="membership">
     <div class="membership-container container-fluid">
         <!-- HEADER -->
-        <header jessenguyen-include-html="../components/header.html"></header>
         <p class="membership-head-title ml-auto mr-auto">
             CÁC GÓI DỊCH VỤ CỦA PUPPIES HUB
         </p>
@@ -82,7 +81,7 @@
             <div class="row">
                 <div class="col col-md-6 col-lg-2 mb-3">
                     <div class="card text-center">
-                        <img class="free" src="../assets/free_membership.png" alt="free" />
+                        <img class="free" src="../assets/free_membership.png" alt="free"/>
                         <div class="card-img-overlay">
                             <h2 class="card-title text-white text-uppercase font-weight-bold">Free</h2>
                             <div class="card-text card-usage text-uppercase">Unlimited</div>
@@ -107,6 +106,7 @@
                             <button
                                     type="button"
                                     class="btn btn-lg cta-membership-btn mb-3"
+                                    data-toggle="modal" data-target="#modal-buypack"
                             >
                                 SIGN UP
                             </button>
@@ -116,7 +116,7 @@
 
                 <div class="col col-md-6 col-lg-2 mb-3">
                     <div class="card text-center">
-                        <img class="basic" src="../assets/basic_membership.png" alt="basic" />
+                        <img class="basic" src="../assets/basic_membership.png" alt="basic"/>
                         <div class="card-img-overlay">
                             <h2 class="card-title text-white text-uppercase font-weight-bold">$10</h2>
                             <div class="card-text card-usage text-uppercase">Monthly</div>
@@ -141,6 +141,7 @@
                             <button
                                     type="button"
                                     class="btn btn-lg cta-membership-btn mb-3"
+                                    data-toggle="modal" data-target="#modal-buypack"
                             >
                                 GET STARTED
                             </button>
@@ -150,9 +151,10 @@
 
                 <div class="col col-md-6 col-lg-2 mb-3">
                     <div class="card text-center">
-                        <img class="basic-plus" src="../assets/basic_membership.png" alt="basic" />
+                        <img class="basic-plus" src="../assets/basic_membership.png" alt="basic"/>
                         <div class="card-img-overlay">
-                            <h2 class="card-title text-white text-uppercase font-weight-bold coming-soon">COMING SOON</h2>
+                            <h2 class="card-title text-white text-uppercase font-weight-bold coming-soon">COMING
+                                SOON</h2>
                             <div class="card-text card-usage text-uppercase">Monthly</div>
                         </div>
 
@@ -175,6 +177,7 @@
                             <button
                                     type="button"
                                     class="btn btn-lg cta-membership-btn mb-3"
+                                    data-toggle="modal" data-target="#modal-buypack"
                             >
                                 GET STARTED
                             </button>
@@ -184,7 +187,7 @@
 
                 <div class="col col-md-6 col-lg-2 mb-3">
                     <div class="card text-center">
-                        <img class="premium" src="../assets/premium_membership.png" alt="premium" />
+                        <img class="premium" src="../assets/premium_membership.png" alt="premium"/>
                         <div class="card-img-overlay">
                             <h2 class="card-title text-white text-uppercase font-weight-bold">$100</h2>
                             <div class="card-text card-usage text-uppercase">Monthly</div>
@@ -211,6 +214,7 @@
                             <button
                                     type="button"
                                     class="btn btn-lg cta-membership-btn mb-3"
+                                    data-toggle="modal" data-target="#modal-buypack"
                             >
                                 GET STARTED
                             </button>
@@ -220,7 +224,7 @@
 
                 <div class="col col-md-6 col-lg-2 mb-3">
                     <div class="card text-center">
-                        <img class="supreme" src="../assets/supreme_membership.png" alt="supreme" />
+                        <img class="supreme" src="../assets/supreme_membership.png" alt="supreme"/>
                         <div class="card-img-overlay">
                             <h2 class="card-title text-white text-uppercase font-weight-bold">$5000</h2>
                             <div class="card-text card-usage text-uppercase">Unlimited</div>
@@ -251,6 +255,7 @@
                             <button
                                     type="button"
                                     class="btn btn-lg cta-membership-btn mb-3"
+                                    data-toggle="modal" data-target="#modal-buypack"
                             >
                                 GET STARTED
                             </button>
@@ -281,9 +286,109 @@
                 </button>
             </a>
         </div>
+
+        <div class="popup">
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal-buypack" tabindex="-1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12 text-right">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="popup-logo">
+                                            <img src="img/home/logo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="content-header">
+                                            <h4 class="popup-title">HƯỚNG DẪN THANH TOÁN</h4>
+                                            <p class="popup-subtext">Thanh toán Puppies Hub</p>
+                                            <p class="popup-subtext">Để mua các gói dịch vụ, các bạn vui lòng thao tác
+                                                các bước sau đây</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="popup-text">1. Chọn gói dịch vụ</p>
+                                    <p class="popup-text">2. Thanh toán gói dịch vụ bằng USDT mạng lưới TRC-20</p>
+
+                                    <div class="content-main">
+                                        <div class="instruct">
+                                            <h4 class="instruct-title">Thanh toán</h4>
+                                            <p class="popup-text">1. Tại ví Binance, bạn vui lòng chọn USDT và bấm
+                                                withdraw</p>
+                                            <img src="img/membership/instruct-image.png" alt="" class="instruct-img">
+
+                                            <p class="popup-text">2. Sau đó vui lòng nhập các thông tin dưới đây</p>
+                                            <div class="sub-instruct">
+                                                <p class="popup-text">a. Địa chỉ ví:</p>
+                                                <p class="popup-text">b. Mạng lưới: TRX (TRC-20)</p>
+                                                <p class="popup-text">c. Phí hằng tháng: chi phí tương đương gói mà các
+                                                    bạn đã chọn</p>
+                                                <p class="popup-text">d. Bấm Withdraw (lưu ý phí chuyển tiền của binance
+                                                    là $1
+                                                    vì vậy bạn vui lòng chuyển số tiền gói dịch vụ + 1$)</p>
+                                            </div>
+
+                                            <div class="popup2">
+                                                <h3> <span class="p2-title-1">Giá gói: </span> 100$ </h3>
+                                                <h3><span class="p2-title-2">Tiền đã nạp: </span>98$</h3>
+                                                <h3><span class="p2-title-3">Tiền còn thiếu: </span>2$</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    </div>
+
+                                    <p class="popup-text">3. Sau đó bạn bấm vào trang verify và nhập TXID và chờ hệ
+                                        thống xác nhận</p>
+                                    <div class="col-12 mt-3 mb-3">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <input type="text" class="form-control txId"
+                                                       placeholder="Nhập TXID ...">
+                                            </div>
+                                            <div class="col-4">
+                                                <button class="btn btn-warning btn-block">Xác nhận</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="popup-text text-center font-italic">Nếu gặp vấn đề khi thanh toán vui lòng
+                                        liên hệ support để được hỗ trợ</p>
+                                    <div class="col-12 text-center mt-3 pb-5">
+                                        <a href="https://discord.gg/jegvCh9V2a">
+                                            <button class="btn btn-contact">Liên hệ</button>
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
-
 
 
 <footer class="footer-section">
@@ -353,6 +458,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!--====== Javascripts & Jquery ======-->
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/popper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
