@@ -79,3 +79,10 @@
     padding-bottom: 2rem;
     border-bottom: 1px solid;
 }
+
+.category-title {
+    border-bottom: 1px solid;
+    margin-bottom: 25px;
+    padding-bottom: 10px
+
+}
