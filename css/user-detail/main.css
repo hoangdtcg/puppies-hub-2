@@ -1,4 +1,4 @@
-.user-detail-container {
+.user-detail .user-detail-container {
     background: #000 url(../../img/user-detail/background_user_detail.png);
     background-size: cover;
     padding: 4.5rem;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .user-detail-container {
+    .user-detail .user-detail-container {
         height: 100vh;
     }
 }
@@ -16,12 +16,12 @@
 } */
 
 @media screen and (max-width: 425px) {
-    .user-image {
+    .user-detail .user-image {
         width: 100%;
     }
 }
 
-.user-social-item-container {
+.user-detail .user-social-item-container {
     background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
 }
@@ -81,134 +81,134 @@
     color: #c8c8c8;
 }
 
-.money-current-month,
-.all-money {
+.user-detail .money-current-month,
+.user-detail .all-money {
     font-weight: 800;
     font-size: 2.8125rem;
     line-height: 3.3125rem;
     text-align: center;
 }
 
-.money-current-month {
+.user-detail .money-current-month {
     color: #ff9900;
 }
 
-.all-money {
+.user-detail .all-money {
     color: #2bb74a;
 }
 
-.user-info-container {
+.user-detail .user-info-container {
     background: #000;
     border-radius: 20px;
     padding: 2.3125rem 2.625rem;
     margin-bottom: 1.5625rem;
 }
 
-.user-info-title {
+.user-detail .user-info-title {
     font-weight: 900;
     font-size: 1.8125rem;
     line-height: 2.125rem;
     color: #fff;
 }
 
-.auth-label {
+.user-detail .auth-label {
     font-weight: 500;
     font-size: 1.75rem;
     line-height: 2.0625rem;
     color: #fff;
 }
 
-.auth-input {
+.user-detail .auth-input {
     background: rgba(69, 69, 69, 0.5);
     border-radius: 10px;
     height: 2.625rem;
 }
 
-.auth-input.form-control {
+.user-detail .auth-input.form-control {
     border: 1px solid rgba(69, 69, 69, 0.5);
     color: #fff;
 }
 
-.auth-input.form-control:focus {
+.user-detail .auth-input.form-control:focus {
     background: rgba(69, 69, 69, 0.5);
     border-color: rgba(69, 69, 69, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(69, 69, 69, 0.5);
 }
 
-input[type="date"]#birthday::-webkit-calendar-picker-indicator {
+.user-detail input[type="date"]#birthday::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
 
-.user-edit-btn {
+.user-detail .user-edit-btn {
     background: #323232;
     border-radius: 10px;
     color: #fff;
     margin-left: 1rem;
 }
 
-.user-edit-btn:hover {
+.user-detail .user-edit-btn:hover {
     color: #fff;
 }
 
-.user-edit-btn:focus {
+.user-detail .user-edit-btn:focus {
     box-shadow: 0 0 0 0.2rem transparent;
 }
 
-.ref-item-container {
+.user-detail .ref-item-container {
     background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
 }
 
 @media screen and (max-width: 767px) {
-    .ref-item-container,
-    .money-container {
+    .user-detail .ref-item-container,
+    .user-detail .money-container {
         max-width: 100% !important;
         flex: 1 0 100% !important;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .user-social-item-container-left,
-    .money-container-left {
+    .user-detail .user-social-item-container-left,
+    .user-detail .money-container-left {
         margin-right: 1rem !important;
     }
 }
 
 @media screen and (width: 1440px) {
-    .money-container-left {
+    .user-detail .money-container-left {
         margin-right: 0 !important;
     }
 }
 
-.ref-text {
+.user-detail .ref-text {
     font-weight: 900;
     font-size: 1.5rem;
     line-height: 1.75rem;
     color: #fff;
 }
 
-.refer-btn,
-.upgrade-btn {
+.user-detail .refer-btn,
+.user-detail .upgrade-btn {
     background: #ff9900;
     border-radius: 10px;
     color: #fff;
 }
 
-.upgrade-btn {
+.user-detail .upgrade-btn {
     font-weight: 800;
     font-size: 1.875rem;
     line-height: 2.1875rem;
     height: 5.5rem;
 }
 
-.refer-btn:hover {
+.user-detail .refer-btn:hover {
     color: #fff;
 }
 
-.upgrade-btn:hover {
+.user-detail .upgrade-btn:hover {
     color: #fff;
 }
 
-.img-user-detail {
+.user-detail .img-user-detail {
     width: 100%;
 }

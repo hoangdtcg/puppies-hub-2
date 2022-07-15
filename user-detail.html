@@ -71,217 +71,218 @@
 
 </nav>
 
-
-<div class="user-detail-container container-fluid">
-    <div class="row">
-        <div class="user-detail-left col-xl-10 pt-120">
-            <div class="user-account-container row">
-                <div class="col-xl-3">
-                    <div
-                            class="img-container d-flex justify-content-center align-items-center"
-                    >
-                        <img
-                                class="user-image img-fluid"
-                                src="assets/user_detail_profile.png"
-                                alt="user_detail_profile"
-                        />
-                    </div>
-
-                    <div class="user-social-container p-3 row">
+<div class="user-detail">
+    <div class="user-detail-container container-fluid">
+        <div class="row">
+            <div class="user-detail-left col-xl-10 pt-120">
+                <div class="user-account-container row">
+                    <div class="col-xl-3">
                         <div
-                                class="user-social-item-container user-social-item-container-left mb-3 mr-xl-3 p-3 col d-flex justify-content-center align-items-center"
+                                class="img-container d-flex justify-content-center align-items-center"
                         >
-                            <p class="user-social-item-title m-0 text-center">Trader</p>
+                            <img
+                                    class="user-image img-fluid"
+                                    src="assets/user_detail_profile.png"
+                                    alt="user_detail_profile"
+                            />
                         </div>
 
+                        <div class="user-social-container p-3 row">
+                            <div
+                                    class="user-social-item-container user-social-item-container-left mb-3 mr-xl-3 p-3 col d-flex justify-content-center align-items-center"
+                            >
+                                <p class="user-social-item-title m-0 text-center">Trader</p>
+                            </div>
 
+
+                        </div>
+                    </div>
+
+                    <div class="ml-auto col-xl-4">
+                        <div
+                                class="trader-name text-white d-flex justify-content-center align-items-center"
+                        >
+                            TRADER NAME
+                        </div>
+
+                        <div class="row m-0 justify-content-between">
+                            <div
+                                    class="money-container money-container-left col mb-3 mr-xl-3 d-flex flex-column justify-content-center align-items-center"
+                            >
+                                <p class="money-title m-1 text-center">
+                                    Số tiền kiếm được tháng này
+                                </p>
+                                <p class="money-current-month m-0">$124.65</p>
+                            </div>
+
+                            <div
+                                    class="money-container money-container-right col mb-3 d-flex flex-column justify-content-center align-items-center"
+                            >
+                                <p class="money-title m-1 text-center">
+                                    Tổng số tiền đã kiếm được từ khi đăng ký
+                                </p>
+                                <p class="all-money m-0">$124.65</p>
+                            </div>
+                        </div>
+                        <div
+                                class="user-social-item-container user-social-item-container-right mb-3 p-3 col d-flex flex-column justify-content-between align-items-center"
+                        >
+                            <p class="social-name m-1 text-center">Telegram</p>
+                            <p class="social-acc m-0 text-center">@Ericxspace</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4">
+                        <div
+                                class="ranking d-flex text-white justify-content-center align-items-center"
+                        >
+                            RANKING
+                        </div>
+
+                        <button
+                                type="button"
+                                class="btn btn-block text-uppercase upgrade-btn mb-3"
+                        >
+                            NÂNG CẤP TÀI KHOẢN
+                        </button>
                     </div>
                 </div>
 
-                <div class="ml-auto col-xl-4">
-                    <div
-                            class="trader-name text-white d-flex justify-content-center align-items-center"
-                    >
-                        TRADER NAME
-                    </div>
+                <div class="user-info-container">
+                    <p class="user-info-title">Thông tin cá nhân</p>
 
-                    <div class="row m-0 justify-content-between">
-                        <div
-                                class="money-container money-container-left col mb-3 mr-xl-3 d-flex flex-column justify-content-center align-items-center"
-                        >
-                            <p class="money-title m-1 text-center">
-                                Số tiền kiếm được tháng này
-                            </p>
-                            <p class="money-current-month m-0">$124.65</p>
-                        </div>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-lg-6">
+                                <label class="auth-label" for="name">Name</label>
+                                <div class="form-row align-items-center">
+                                    <div class="col-9 p-0">
+                                        <input
+                                                class="auth-input form-control"
+                                                type="name"
+                                                name="name"
+                                                id="name"
+                                        />
+                                    </div>
 
-                        <div
-                                class="money-container money-container-right col mb-3 d-flex flex-column justify-content-center align-items-center"
-                        >
-                            <p class="money-title m-1 text-center">
-                                Tổng số tiền đã kiếm được từ khi đăng ký
-                            </p>
-                            <p class="all-money m-0">$124.65</p>
+                                    <div class="col-3 p-0">
+                                        <button
+                                                type="button"
+                                                class="btn btn-md text-uppercase user-edit-btn"
+                                        >
+                                            Edit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-lg-6">
+                                <label class="auth-label" for="phone">Số điện thoại</label>
+                                <div class="form-row align-items-center">
+                                    <div class="col-9 p-0">
+                                        <input
+                                                class="auth-input form-control"
+                                                type="tel"
+                                                name="phone"
+                                                id="phone"
+                                        />
+                                    </div>
+
+                                    <div class="col-3 p-0">
+                                        <button
+                                                type="button"
+                                                class="btn btn-md text-uppercase user-edit-btn"
+                                        >
+                                            Edit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-lg-6">
+                                <label class="auth-label" for="birthday">Năm sinh</label>
+                                <div class="form-row align-items-center">
+                                    <div class="col-9 p-0">
+                                        <input
+                                                class="auth-input form-control"
+                                                type="date"
+                                                name="birthday"
+                                                id="birthday"
+                                        />
+                                    </div>
+
+                                    <div class="col-3 p-0">
+                                        <button
+                                                type="button"
+                                                class="btn btn-md text-uppercase user-edit-btn"
+                                        >
+                                            Edit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-lg-6">
+                                <label class="auth-label" for="email">Email</label>
+                                <div class="form-row align-items-center">
+                                    <div class="col-9 p-0">
+                                        <input
+                                                class="auth-input form-control"
+                                                type="email"
+                                                name="email"
+                                                id="email"
+                                        />
+                                    </div>
+
+                                    <div class="col-3 p-0">
+                                        <button
+                                                type="button"
+                                                class="btn btn-md text-uppercase user-edit-btn"
+                                        >
+                                            Edit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div
-                            class="user-social-item-container user-social-item-container-right mb-3 p-3 col d-flex flex-column justify-content-between align-items-center"
-                    >
-                        <p class="social-name m-1 text-center">Telegram</p>
-                        <p class="social-acc m-0 text-center">@Ericxspace</p>
-                    </div>
+                    </form>
                 </div>
 
-                <div class="col-xl-4">
+                <div class="p-3 row">
                     <div
-                            class="ranking d-flex text-white justify-content-center align-items-center"
+                            class="ref-item-container mb-3 mr-md-3 p-3 col d-flex justify-content-between align-items-center"
                     >
-                        RANKING
+                        <p class="ref-text text-uppercase mb-0 pt-1">LINK GIỚI THIỆU</p>
+                        <button type="button" class="btn btn-md text-uppercase refer-btn">
+                            COPY
+                        </button>
                     </div>
 
-                    <button
-                            type="button"
-                            class="btn btn-block text-uppercase upgrade-btn mb-3"
+                    <div
+                            class="ref-item-container mb-3 p-3 col d-flex justify-content-between"
                     >
-                        NÂNG CẤP TÀI KHOẢN
-                    </button>
+                        <p class="ref-text text-uppercase mb-0 pt-1">MÃ GIỚI THIỆU</p>
+                        <button type="button" class="btn btn-md text-uppercase refer-btn">
+                            COPY
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <div class="user-info-container">
-                <p class="user-info-title">Thông tin cá nhân</p>
-
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-lg-6">
-                            <label class="auth-label" for="name">Name</label>
-                            <div class="form-row align-items-center">
-                                <div class="col-9 p-0">
-                                    <input
-                                            class="auth-input form-control"
-                                            type="name"
-                                            name="name"
-                                            id="name"
-                                    />
-                                </div>
-
-                                <div class="col-3 p-0">
-                                    <button
-                                            type="button"
-                                            class="btn btn-md text-uppercase user-edit-btn"
-                                    >
-                                        Edit
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group col-lg-6">
-                            <label class="auth-label" for="phone">Số điện thoại</label>
-                            <div class="form-row align-items-center">
-                                <div class="col-9 p-0">
-                                    <input
-                                            class="auth-input form-control"
-                                            type="tel"
-                                            name="phone"
-                                            id="phone"
-                                    />
-                                </div>
-
-                                <div class="col-3 p-0">
-                                    <button
-                                            type="button"
-                                            class="btn btn-md text-uppercase user-edit-btn"
-                                    >
-                                        Edit
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group col-lg-6">
-                            <label class="auth-label" for="birthday">Năm sinh</label>
-                            <div class="form-row align-items-center">
-                                <div class="col-9 p-0">
-                                    <input
-                                            class="auth-input form-control"
-                                            type="date"
-                                            name="birthday"
-                                            id="birthday"
-                                    />
-                                </div>
-
-                                <div class="col-3 p-0">
-                                    <button
-                                            type="button"
-                                            class="btn btn-md text-uppercase user-edit-btn"
-                                    >
-                                        Edit
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group col-lg-6">
-                            <label class="auth-label" for="email">Email</label>
-                            <div class="form-row align-items-center">
-                                <div class="col-9 p-0">
-                                    <input
-                                            class="auth-input form-control"
-                                            type="email"
-                                            name="email"
-                                            id="email"
-                                    />
-                                </div>
-
-                                <div class="col-3 p-0">
-                                    <button
-                                            type="button"
-                                            class="btn btn-md text-uppercase user-edit-btn"
-                                    >
-                                        Edit
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+            <div class="user-detail-right sidebar side-right col-xl-2 d-none d-xl-block">
+                <img
+                        class="img-user-detail mb-3 img-fluid"
+                        src="assets/right_section_image.png"
+                        alt="right_upper"
+                />
+                <img
+                        class="img-user-detail mb-3 img-fluid"
+                        src="assets/user_detail_2.png"
+                        alt="right_down"
+                />
             </div>
 
-            <div class="p-3 row">
-                <div
-                        class="ref-item-container mb-3 mr-md-3 p-3 col d-flex justify-content-between align-items-center"
-                >
-                    <p class="ref-text text-uppercase mb-0 pt-1">LINK GIỚI THIỆU</p>
-                    <button type="button" class="btn btn-md text-uppercase refer-btn">
-                        COPY
-                    </button>
-                </div>
-
-                <div
-                        class="ref-item-container mb-3 p-3 col d-flex justify-content-between"
-                >
-                    <p class="ref-text text-uppercase mb-0 pt-1">MÃ GIỚI THIỆU</p>
-                    <button type="button" class="btn btn-md text-uppercase refer-btn">
-                        COPY
-                    </button>
-                </div>
-            </div>
         </div>
-
-        <div class="user-detail-right sidebar side-right col-xl-2 d-none d-xl-block">
-            <img
-                    class="img-user-detail mb-3 img-fluid"
-                    src="assets/right_section_image.png"
-                    alt="right_upper"
-            />
-            <img
-                    class="img-user-detail mb-3 img-fluid"
-                    src="assets/user_detail_2.png"
-                    alt="right_down"
-            />
-        </div>
-
     </div>
 </div>
 
