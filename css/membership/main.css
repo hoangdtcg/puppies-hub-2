@@ -182,7 +182,7 @@ img.supreme
     border-bottom: none;
     margin-bottom: 20px;
 }
-.membership p{
+.membership .popup p{
     font-family: monospace, serif;
     color: white;
     font-size: 16px;
