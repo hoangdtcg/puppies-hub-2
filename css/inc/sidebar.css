@@ -8,7 +8,7 @@
     padding: 20px 0;
     overflow-x: hidden;
     overflow-y: auto;
-    width: 250px;
+    width: 200px;
 }
 .side-left{
     left: 25px;
@@ -53,7 +53,7 @@ div#sidebar-wrapper {
 }
 
 .sidebar-nav li a span {
-    margin-left: 1.75rem;
+    margin-left: 1.5rem;
 }
 .sidebar-nav li a i {
     font-size: 25px;

@@ -43,38 +43,38 @@
     padding: 0;
 }
 
-table {
+.trading table {
     width: 100%;
     padding: 5px;
     border-spacing: 0 5px;
 }
 
-.info.coin {
+.trading .info.coin {
     font-size: 12px;
     border-radius: 5px 0 0 5px;
     padding: 5px;
     font-weight: bold;
 }
 
-p.entry,
-p.pnl-title {
+.trading p.entry,
+.trading p.pnl-title {
     margin: 0;
     font-size: 8px;
 }
 
-table {
+.trading table {
     border-collapse: separate;
     border-spacing: 0 15px;
 }
 
-p.price-value,
-p.pnl-value {
+.trading p.price-value,
+.trading p.pnl-value {
     margin: 0;
     font-size: 12px;
     font-weight: bold;
 }
 
-button.edit {
+.trading button.edit {
     /* font-size: 12px; */
     margin-left: 5px;
     margin-right: 5px;
@@ -87,7 +87,7 @@ button.edit {
     /* box-sizing: border-box; */
 }
 
-.label-command {
+.trading .label-command {
     display: block;
     padding: .2em .6em .3em;
     font-size: 50%;
@@ -99,44 +99,44 @@ button.edit {
     border-radius: .25em;
 }
 
-.label-long {
+.trading .label-long {
     background-color: #2BB74A;
 }
 
 
-.label-short {
+.trading .label-short {
     background-color: #B81D1D;
 }
 
-.pnl-win {
+.trading .pnl-win {
     color: #2BB74A;
 }
 
-.pnl-lose {
+.trading .pnl-lose {
     color: #B81D1D;
 }
 
-.trading-list {
+.trading .trading-list {
     min-height: 300px;
 }
 
-.trading-list .col {
+.trading .trading-list .col {
     padding-left: 10px;
     padding-right: 10px;
     box-sizing: border-box;
 }
 
-.pending,
-.active,
-textarea {
+.trading .pending,
+.trading .active,
+.trading textarea {
     border-radius: 10px;
     padding: 10px 15px 30px 15px;
     background-color: rgba(0, 0, 0, .7);
 }
 
 
-.pending .title h2,
-.active .title h2{
+.trading .pending .title h2,
+.trading .active .title h2{
     padding-left: 5px;
     font-size: 20px;
     font-weight: bold;
@@ -145,26 +145,26 @@ textarea {
     color: white;
 }
 
-.pending h6,
-.active h6 {
+.trading .pending h6,
+.trading .active h6 {
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
-.pending table tr,
-.active table tr {
+.trading .pending table tr,
+.trading .active table tr {
     margin-bottom: 10px;
     padding: 10px 0;
     box-sizing: border-box;
 }
 
-.pending .info,
-.active .info {
+.trading .pending .info,
+.trading .active .info {
     background-color: #2F2F2F;
 }
 
-.pending .coin,
-.active .coin {
+.trading .pending .coin,
+.trading .active .coin {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -172,57 +172,57 @@ textarea {
     line-height: 19px;
     color: #FFFFFF;
 }
-.info.price, .info.pnl {
+.trading .info.price, .info.pnl {
     text-align: center;
 }
 
 
-.trader-communication {
+.trading .trader-communication {
     width: 100%;
     height: 100%;
 }
 
-textarea {
+.trading textarea {
     width: 100%;
     height: 100%;
     text-align: left;
     color: white;
 }
 
-textarea::placeholder {
+.trading textarea::placeholder {
     color: white;
 }
 
-input,
-textarea {
+.trading input,
+.trading textarea {
     font-size: initial !important;
 }
 
-.trading-info {
+.trading .trading-info {
     padding: 5px 15px !important;
 }
 
-.action {
+.trading .action {
     margin-bottom: 10px;
 }
 
-#modal-trading{
+.trading #modal-trading{
     background-color: rgba(128, 128, 128, 0.5);
 }
-#modal-trading .modal-content{
+.trading #modal-trading .modal-content{
     background-color: black;
     padding: 25px;
     border-radius: 20px;
 }
 
-#modal-trading h1{
+.trading #modal-trading h1{
     font-family: 'Roboto',sans-serif;
     font-weight: bold;
     font-size: 20px;
     color: white;
 }
 
-#modal-trading h3{
+.trading #modal-trading h3{
     font-family: 'Roboto',sans-serif;
     font-weight: bold;
     font-size: 16px;
@@ -231,7 +231,7 @@ textarea {
     margin-bottom: 5px;
 }
 
-#modal-trading input:read-only{
+.trading #modal-trading input:read-only{
     background-color: grey;
     color: white;
 }

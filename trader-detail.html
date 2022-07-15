@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Puppies Hub | Trading</title>
+    <title>Puppies Hub | Trader Detail</title>
     <meta charset="UTF-8">
     <meta name="description" content="Cryptocurrency Landing Page Template">
     <meta name="keywords" content="cryptocurrency, unica, creative, html">
@@ -25,8 +25,8 @@
     <link rel="stylesheet" href="css/inc/style.css"/>
     <link rel="stylesheet" href="css/inc/base.css"/>
     <link rel="stylesheet" href="css/inc/sidebar.css"/>
-    <link rel="stylesheet" href="css/trading/main.css"/>
-    <link rel="stylesheet" href="css/trading/responsive.css"/>
+    <link rel="stylesheet" href="css/trader-detail/main.css"/>
+    <link rel="stylesheet" href="css/trader-detail/responsive.css"/>
 
 </head>
 <body>
@@ -74,148 +74,101 @@
 
 </nav>
 
-<div class="trading">
-    <section class="trading-page">
+<div class="trader-detail">
+    <section class="trader-detail-page">
         <div class="container">
             <div class="row">
-                <div class="col-2 sidebar side-left pl-2 pr-2">
-                    <div class="row">
-                        <div class="col-12 mb-2">
-                            <img src="img/ads-1.png" alt="" class="w-100">
-                        </div>
+                <div class="col-10 pt-120">
+                    <div class="round-bg">
                         <div class="col-12">
-                            <img src="img/ads-2.png" alt="" class="w-100">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 pt-120">
-                    <div class="row">
-                        <div class="col-md-9 col-12 mb-3">
-                            <div class="chart w-100">
-                                <img class="w-100" src="img/trading/trading.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-12 mb-3">
                             <div class="row">
-                                <div class="col-6">
-                                    <button class="btn btn-block btn-success is-selected">LONG</button>
-                                </div>
-                                <div class="col-6">
-                                    <button class="btn btn-block btn-danger">SHORT</button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 entry mt-3">
-                                    <input type="text" class="form-control entry-value" placeholder="ENTRY">
-                                    <p class="error">ENTRY không được để trống</p>
-
-                                </div>
-                                <div class="col-12 stop-loss mt-3">
-                                    <input type="text" class="form-control stop-loss-value" placeholder="STOP LOSS">
-                                    <p class="error">SL không được để trống</p>
-                                </div>
-                                <div class="col-12 take-profit mt-3">
-                                    <div class="tp1 col-12 mb-2">
-                                        <div class="row">
-                                            <div class="col-8 p-0">
-                                                <input type="text" class="form-control tp1-value"
-                                                       placeholder="TAKE PROFIT 1">
-                                            </div>
-                                            <div class="col-4 p-0 pl-2">
-                                                <input type="text" class="form-control tp1-percent" placeholder="%">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="tp2 col-12 mb-2">
-                                        <div class="row">
-                                            <div class="col-8 p-0">
-                                                <input type="text" class="form-control tp1-value"
-                                                       placeholder="TAKE PROFIT 1">
-                                            </div>
-                                            <div class="col-4 p-0 pl-2">
-                                                <input type="text" class="form-control tp1-percent" placeholder="%">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="tp3 col-12 mb-2">
-                                        <div class="row">
-                                            <div class="col-8 p-0">
-                                                <input type="text" class="form-control tp1-value"
-                                                       placeholder="TAKE PROFIT 1">
-                                            </div>
-                                            <div class="col-4 p-0 pl-2">
-                                                <input type="text" class="form-control tp1-percent" placeholder="%">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 mb-2 p-0">
-                                        <p class="error">Cần tối thiểu 1 TP</p>
+                                <div class="col-md-9 col-12 mb-3">
+                                    <div class="chart w-100">
+                                        <img class="w-100" src="img/trading/trading.png" alt="">
                                     </div>
                                 </div>
-                                <div class="col-12 risk mt-2">
-                                    <input type="text" class="form-control risk-value text-center"
-                                           placeholder="RISK (1 - 5%)">
-                                    <p class="error">RISK không được để trống</p>
-
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-12 btn-action mt-4">
-                                    <button id="buy-btn" class="btn btn-block btn-success btn-buy action-btn">BUY
-                                    </button>
-                                    <button class="btn btn-block btn-danger btn-sell action-btn" disabled>SELL
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <!--<div class="col-md-9 col-12">
-                            <div class="row">
-                                <div class="col-md-5 col-12 pending">
+                                <div class="col-md-3 col-12 mb-3">
                                     <div class="row">
-                                        <div class="card w-100">
-                                            <div class="card-header">
-                                                <strong>Các lệnh đang Pending</strong>
-                                            </div>
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">
-                                                    <div class="col-12">
-                                                        <div class="row">
-                                                            <div class="col-10">
-                                                                <div class="row">
-                                                                    <div class="col-4 p-0">
-                                                                        <p class="curency">BTC/USDT</p>
-                                                                    </div>
-                                                                    <div class="col-4 p-0">
-                                                                        <p class="is-long">LONG</p>
-                                                                    </div>
-                                                                    <div class="col-4 p-0">
-                                                                        <p class="sub-title">Entry</p>
-                                                                        <p class="value-entry">31,123,07</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-2">
-                                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                                            </div>
-                                                        </div>
+                                        <div class="col-6">
+                                            <button class="btn btn-block btn-success is-selected">LONG</button>
+                                        </div>
+                                        <div class="col-6">
+                                            <button class="btn btn-block btn-danger">SHORT</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 entry mt-3">
+                                            <input type="text" class="form-control entry-value" placeholder="ENTRY">
+                                            <p class="error">ENTRY không được để trống</p>
+
+                                        </div>
+                                        <div class="col-12 stop-loss mt-3">
+                                            <input type="text" class="form-control stop-loss-value" placeholder="STOP LOSS">
+                                            <p class="error">SL không được để trống</p>
+                                        </div>
+                                        <div class="col-12 take-profit mt-3">
+                                            <div class="tp1 col-12 mb-2">
+                                                <div class="row">
+                                                    <div class="col-8 p-0">
+                                                        <input type="text" class="form-control tp1-value"
+                                                               placeholder="TAKE PROFIT 1">
                                                     </div>
-                                                </li>
-                                            </ul>
+                                                    <div class="col-4 p-0 pl-2">
+                                                        <input type="text" class="form-control tp1-percent" placeholder="%">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tp2 col-12 mb-2">
+                                                <div class="row">
+                                                    <div class="col-8 p-0">
+                                                        <input type="text" class="form-control tp1-value"
+                                                               placeholder="TAKE PROFIT 1">
+                                                    </div>
+                                                    <div class="col-4 p-0 pl-2">
+                                                        <input type="text" class="form-control tp1-percent" placeholder="%">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tp3 col-12 mb-2">
+                                                <div class="row">
+                                                    <div class="col-8 p-0">
+                                                        <input type="text" class="form-control tp1-value"
+                                                               placeholder="TAKE PROFIT 1">
+                                                    </div>
+                                                    <div class="col-4 p-0 pl-2">
+                                                        <input type="text" class="form-control tp1-percent" placeholder="%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-2 p-0">
+                                                <p class="error">Cần tối thiểu 1 TP</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 risk mt-2">
+                                            <input type="text" class="form-control risk-value text-center"
+                                                   placeholder="RISK (1 - 5%)">
+                                            <p class="error">RISK không được để trống</p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 btn-action mt-4">
+                                            <button id="buy-btn" class="btn btn-block btn-success btn-buy action-btn">BUY
+                                            </button>
+                                            <button class="btn btn-block btn-danger btn-sell action-btn" disabled>SELL
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-7 col-12"></div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-12">
+                    </div>
 
-                        </div>-->
+
+                    <div class="row">
                         <div class="trading-list col-12">
                             <div class="row">
                                 <div class="col-12 col-md-4 p-1">
@@ -379,9 +332,6 @@
 
                         </div>
                     </div>
-                </div>
-                <div class="col-12 mt-5">
-
                 </div>
                 <div class="col-2 sidebar side-right pl-2 pr-2">
                     <div class="row">

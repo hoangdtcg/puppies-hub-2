@@ -1,0 +1,166 @@
+.trader-detail table {
+    width: 100%;
+    padding: 5px;
+    border-spacing: 0 5px;
+}
+
+.trader-detail .info.coin {
+    font-size: 12px;
+    border-radius: 5px 0 0 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.trader-detail p.entry,
+.trader-detail p.pnl-title {
+    margin: 0;
+    font-size: 8px;
+}
+
+.trader-detail table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+.trader-detail p.price-value,
+.trader-detail p.pnl-value {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.trader-detail button.edit {
+    /* font-size: 12px; */
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgba(134, 134, 134, 0.5);
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 10px!important;
+    font-weight: bold;
+    /* box-sizing: border-box; */
+}
+
+.trader-detail .label-command {
+    display: block;
+    padding: .2em .6em .3em;
+    font-size: 50%;
+    line-height: 2;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.trader-detail .label-long {
+    background-color: #2BB74A;
+}
+
+
+.trader-detail .label-short {
+    background-color: #B81D1D;
+}
+
+.trader-detail .pnl-win {
+    color: #2BB74A;
+}
+
+.trader-detail .pnl-lose {
+    color: #B81D1D;
+}
+
+.trader-detail .trader-detail-list {
+    min-height: 300px;
+}
+
+.trader-detail .trader-detail-list .col {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.trader-detail .pending,
+.trader-detail .active,
+.trader-detail textarea {
+    border-radius: 10px;
+    padding: 10px 15px 30px 15px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+
+.trader-detail .pending .title h2,
+.trader-detail .active .title h2{
+    padding-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.trader-detail .pending h6,
+.trader-detail .active h6 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.trader-detail .pending table tr,
+.trader-detail .active table tr {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.trader-detail .pending .info,
+.trader-detail .active .info {
+    background-color: #2F2F2F;
+}
+
+.trader-detail .pending .coin,
+.trader-detail .active .coin {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.trader-detail .info.price, .trader-detail .info.pnl {
+    text-align: center;
+}
+
+
+.trader-detail .trader-communication {
+    width: 100%;
+    height: 100%;
+}
+
+.trader-detail textarea {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    color: white;
+}
+
+.trader-detail textarea::placeholder {
+    color: white;
+}
+
+.trader-detail input,
+.trader-detail textarea {
+    font-size: initial !important;
+}
+
+.trader-detail .trader-detail-info {
+    padding: 5px 15px !important;
+}
+
+.trader-detail .action {
+    margin-bottom: 10px;
+}
+
+.trader-detail p.price-value{
+    color: white;
+}
