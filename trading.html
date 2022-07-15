@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Puppies Hub | Leaderboard</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cryptocurrency Landing Page Template">
+    <meta name="keywords" content="cryptocurrency, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon"/>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/themify-icons.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <!--    <link rel="stylesheet" href="css/owl.carousel.css"/>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/inc/style.css"/>
+    <link rel="stylesheet" href="css/inc/base.css"/>
+    <link rel="stylesheet" href="css/inc/sidebar.css"/>
+    <link rel="stylesheet" href="css/trading/main.css"/>
+    <link rel="stylesheet" href="css/trading/responsive.css"/>
+
+</head>
+<body>
+
+<div class="overlay" style="display: none"></div>
+
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<nav class="navbar fixed-top">
+    <div class="header-section">
+        <div class="container-fluid">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-2">
+                        <a href="index.html" class="site-logo">
+                            <div id="logo">
+                                <img src="img/home/logo.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-10">
+                        <div id="menu">
+                            <div class="responsive-bar"><i class="fa fa-bars"></i></div>
+                            <a href="" class="user"><i class="fa fa-user"></i></a>
+                            <a href="" class="site-btn sb-gradients ">LOGIN</a>
+                            <nav class="main-menu navbar-default">
+                                <ul class="menu-list">
+                                    <li><a href="">CRYPTO DAILY</a></li>
+                                    <li><a href="">LEADERBOARD</a></li>
+                                    <li><a href="">MEMBERSHIP</a></li>
+                                    <li><a href="">ABOUT US</a></li>
+                                    <li><a href="">CONTACT US</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</nav>
+
+<div class="trading">
+    <section class="trading-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 sidebar side-left pl-2 pr-2">
+                    <div class="row">
+                        <div class="col-12 mb-2">
+                            <img src="img/ads-1.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-12">
+                            <img src="img/ads-2.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pt-120">
+                    <div class="row">
+                        <div class="col-md-9 col-12 mb-3">
+                            <div class="chart w-100">
+                                <img class="w-100" src="img/trading/trading.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 mb-3">
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="btn btn-block btn-success is-selected">LONG</button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-block btn-danger">SHORT</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 entry mt-3">
+                                    <input type="text" class="form-control entry-value" placeholder="ENTRY">
+                                </div>
+                                <div class="col-12 stop-loss mt-3">
+                                    <input type="text" class="form-control stop-loss-value" placeholder="STOP LOSS">
+                                </div>
+                                <div class="col-12 take-profit mt-3">
+                                    <div class="tp1 col-12 mb-2">
+                                        <div class="row">
+                                            <div class="col-8 p-0">
+                                                <input type="text" class="form-control tp1-value"
+                                                       placeholder="TAKE PROFIT 1">
+                                            </div>
+                                            <div class="col-4 p-0 pl-2">
+                                                <input type="text" class="form-control tp1-percent" placeholder="%">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tp2 col-12 mb-2">
+                                        <div class="row">
+                                            <div class="col-8 p-0">
+                                                <input type="text" class="form-control tp1-value"
+                                                       placeholder="TAKE PROFIT 1">
+                                            </div>
+                                            <div class="col-4 p-0 pl-2">
+                                                <input type="text" class="form-control tp1-percent" placeholder="%">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tp3 col-12 mb-2">
+                                        <div class="row">
+                                            <div class="col-8 p-0">
+                                                <input type="text" class="form-control tp1-value"
+                                                       placeholder="TAKE PROFIT 1">
+                                            </div>
+                                            <div class="col-4 p-0 pl-2">
+                                                <input type="text" class="form-control tp1-percent" placeholder="%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 risk mt-2">
+                                    <input type="text" class="form-control risk-value text-center"
+                                           placeholder="RISK (1 - 5%)">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 btn-action mt-4">
+                                    <button id="buy-btn" class="btn btn-block btn-success btn-buy action-btn">BUY
+                                    </button>
+                                    <button class="btn btn-block btn-danger btn-sell action-btn" disabled>SELL
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--<div class="col-md-9 col-12">
+                            <div class="row">
+                                <div class="col-md-5 col-12 pending">
+                                    <div class="row">
+                                        <div class="card w-100">
+                                            <div class="card-header">
+                                                <strong>Các lệnh đang Pending</strong>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col-12">
+                                                        <div class="row">
+                                                            <div class="col-10">
+                                                                <div class="row">
+                                                                    <div class="col-4 p-0">
+                                                                        <p class="curency">BTC/USDT</p>
+                                                                    </div>
+                                                                    <div class="col-4 p-0">
+                                                                        <p class="is-long">LONG</p>
+                                                                    </div>
+                                                                    <div class="col-4 p-0">
+                                                                        <p class="sub-title">Entry</p>
+                                                                        <p class="value-entry">31,123,07</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-12"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12">
+
+                        </div>-->
+                        <div class="trading-list col-12">
+                            <div class="row">
+                                <div class="col-12 col-md-4 p-1">
+                                    <div class="pending">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="title">
+                                                    <h2>Các lệnh đang Pending</h2>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <table>
+                                                    <tr>
+                                                        <td class="info coin">BTC/USDT</td>
+                                                        <td class="info command">
+                                                            <span class="label-command label-long">Long</span>
+                                                        </td>
+                                                        <td class="info price">
+                                                            <p class="entry">Entry</p>
+                                                            <p class="price-value">31,123.07</p>
+                                                        </td>
+                                                        <td>
+                                                            <button class="edit btn" data-toggle="modal" data-target="#modal-trading">EDIT</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="info coin">BTC/USDT</td>
+                                                        <td class="info command">
+                                                            <span class="label-command label-short">Short</span>
+                                                        </td>
+                                                        <td class="info price">
+                                                            <p class="entry">Entry</p>
+                                                            <p class="price-value">31,123.07</p>
+                                                        </td>
+                                                        <td>
+                                                            <button class="edit btn" data-toggle="modal" data-target="#modal-trading">EDIT</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="info coin">BTC/USDT</td>
+                                                        <td class="info command">
+                                                            <span class="label-command label-short">Short</span>
+                                                        </td>
+                                                        <td class="info price">
+                                                            <p class="entry">Entry</p>
+                                                            <p class="price-value">31,123.07</p>
+                                                        </td>
+                                                        <td>
+                                                            <button class="edit btn" data-toggle="modal" data-target="#modal-trading">EDIT</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="info coin">BTC/USDT</td>
+                                                        <td class="info command">
+                                                            <span class="label-command label-short">Short</span>
+                                                        </td>
+                                                        <td class="info price">
+                                                            <p class="entry">Entry</p>
+                                                            <p class="price-value">31,123.07</p>
+                                                        </td>
+                                                        <td>
+                                                            <button class="edit btn" data-toggle="modal" data-target="#modal-trading">EDIT</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="info coin">BTC/USDT</td>
+                                                        <td class="info command">
+                                                            <span class="label-command label-short">Short</span>
+                                                        </td>
+                                                        <td class="info price">
+                                                            <p class="entry">Entry</p>
+                                                            <p class="price-value">31,123.07</p>
+                                                        </td>
+                                                        <td>
+                                                            <button class="edit btn" data-toggle="modal" data-target="#modal-trading">EDIT</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 p-1">
+                                    <div class="active">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="title">
+                                                    <h2>Các lệnh đang Active</h2>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <table>
+                                                    <tr>
+                                                        <td class="info coin">BTC/USDT</td>
+                                                        <td class="info command">
+                                                            <span class="label-command label-short">Short</span>
+                                                        </td>
+                                                        <td class="info price">
+                                                            <p class="entry">Entry</p>
+                                                            <p class="price-value">31,123.07</p>
+                                                        </td>
+
+                                                        <td class="info pnl">
+                                                            <p class="pnl-title">PNL</p>
+                                                            <p class="pnl-value pnl-win">+15%</p>
+                                                        </td>
+
+                                                        <td>
+                                                            <button class="edit btn" data-toggle="modal" data-target="#modal-trading">EDIT</button>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="info coin">BTC/USDT</td>
+                                                        <td class="info command">
+                                                            <span class="label-command label-long">Long</span>
+                                                        </td>
+                                                        <td class="info price">
+                                                            <p class="entry">Entry</p>
+                                                            <p class="price-value">31,123.07</p>
+                                                        </td>
+
+                                                        <td class="info pnl">
+                                                            <p class="pnl-title">PNL</p>
+                                                            <p class="pnl-value pnl-lose">-7%</p>
+                                                        </td>
+
+                                                        <td>
+                                                            <button class="edit btn" data-toggle="modal" data-target="#modal-trading">EDIT</button>
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="trader-communication">
+                                        <textarea placeholder="Trader Communication"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+
+                </div>
+                <div class="col-2 sidebar side-right pl-2 pr-2">
+                    <div class="row">
+                        <div class="col-12 mb-2">
+                            <img src="img/ads-1.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-12">
+                            <img src="img/ads-2.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup">
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal-trading" tabindex="-1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="board-title text-effect"><h1>Chỉnh sửa lệnh</h1></div>
+                                    </div>
+
+                                    <div class="col-6 text-right">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <di class="col-12">
+                                <div class="row">
+                                    <div class="col-6 entry mt-1">
+                                        <h3 class="modal-trading-title">ENTRY</h3>
+                                        <input type="text" class="form-control entry-value" placeholder="ENTRY" readonly>
+                                    </div>
+                                    <div class="col-6 risk mt-1">
+                                        <h3 class="modal-trading-title">RISK</h3>
+                                        <input type="text" class="form-control risk-value" placeholder="RISK (1 - 5%)" readonly>
+                                    </div>
+                                    <div class="col-12 stop-loss mt-3">
+                                        <h3 class="modal-trading-title">STOP LOSS</h3>
+                                        <input type="text" class="form-control stop-loss-value" placeholder="STOP LOSS">
+                                    </div>
+                                    <div class="col-12 take-profit mt-3">
+                                        <h3 class="modal-trading-title">PROFIT</h3>
+                                        <div class="tp1 col-12 mb-2">
+                                            <div class="row">
+                                                <div class="col-8 p-0">
+                                                    <input type="text" class="form-control tp1-value"
+                                                           placeholder="TAKE PROFIT 1">
+                                                </div>
+                                                <div class="col-4 p-0 pl-2">
+                                                    <input type="text" class="form-control tp1-percent" placeholder="%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tp2 col-12 mb-2">
+                                            <div class="row">
+                                                <div class="col-8 p-0">
+                                                    <input type="text" class="form-control tp1-value"
+                                                           placeholder="TAKE PROFIT 1">
+                                                </div>
+                                                <div class="col-4 p-0 pl-2">
+                                                    <input type="text" class="form-control tp1-percent" placeholder="%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tp3 col-12 mb-2">
+                                            <div class="row">
+                                                <div class="col-8 p-0">
+                                                    <input type="text" class="form-control tp1-value"
+                                                           placeholder="TAKE PROFIT 1">
+                                                </div>
+                                                <div class="col-4 p-0 pl-2">
+                                                    <input type="text" class="form-control tp1-percent" placeholder="%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 take-profit mt-3">
+                                        <h3 class="modal-trading-title">NOTE</h3>
+                                        <div class="tp1 col-12 mb-2">
+                                            <div class="row">
+                                                <div class="col-12 p-0">
+                                                    <textarea style="background-color: #2f2f2f" class="w-100" rows="5" placeholder="Note of Command"></textarea>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </di>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng lệnh</button>
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Cập nhật</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row spad">
+            <div class="col-md-6 col-lg-3 footer-widget">
+                <img src="img/logo.png" class="mb-4" alt="">
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est
+                    laborum.</p>
+                <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i
+                            class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                                                                target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+            </div>
+            <div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
+                <h5 class="widget-title">Resources</h5>
+                <ul>
+                    <li><a href="#">How to Buy Coin</a></li>
+                    <li><a href="#">Coin Overview</a></li>
+                    <li><a href="#">Blog News</a></li>
+                    <li><a href="#">How to Sell Coin</a></li>
+                    <li><a href="#">Purchase Theme</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
+                <h5 class="widget-title">Quick Links</h5>
+                <ul>
+                    <li><a href="#">Network Stats</a></li>
+                    <li><a href="#">Block Explorers</a></li>
+                    <li><a href="#">Governance</a></li>
+                    <li><a href="#">Exchange Markets</a></li>
+                    <li><a href="#">Get Theme</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 footer-widget pl-lg-5 pl-3">
+                <h5 class="widget-title">Follow Us</h5>
+                <div class="social">
+                    <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="" class="google"><i class="fa fa-google-plus"></i></a>
+                    <a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="" class="twitter"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="col-lg-4 store-links text-center text-lg-left pb-3 pb-lg-0">
+                    <a href=""><img src="img/appstore.png" alt="" class="mr-2"></a>
+                    <a href=""><img src="img/playstore.png" alt=""></a>
+                </div>
+                <div class="col-lg-8 text-center text-lg-right">
+                    <ul class="footer-nav">
+                        <li><a href="">DPA</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Privacy Policy </a></li>
+                        <li><a href="">support@company.com</a></li>
+                        <li><a href="">(123) 456-7890</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--====== Javascripts & Jquery ======-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/popper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<script>
+    //    Loading
+    $("#buy-btn").on('click', function () {
+
+        $("#buy-btn").addClass("loading");
+        $(".overlay").show();
+
+        setTimeout(function () {
+            $("#buy-btn").removeClass("loading");
+            $(".overlay").hide();
+        }, 2000);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+.trading .container{
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Roboto' ,sans-serif;
+
+}
+.trading .container input, .trading .container button.btn{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.trading input{
+    padding: 0 0 0 10px;
+    background-color: #2f2f2f;
+    border: none;
+    color: white;
+}
+
+.trading input:focus{
+    padding: 0 0 0 10px;
+    background-color: #2f2f2f;
+    border: 1px solid rgba(169, 169, 169, 0.5);
+    color: white;
+}
+
+::placeholder{
+    color: white;
+}
+.trading input.entry-value{
+    background-color: orange;
+}
+
+.trading .is-selected{
+    border: 3px solid orange;
+}
+
+.trading .list-group {
+    height: 40vh;
+    overflow-y: scroll;
+}
+
+.trading .list-group .list-group-item{
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    padding: 5px;
+    border-spacing: 0 5px;
+}
+
+.info.coin {
+    font-size: 12px;
+    border-radius: 5px 0 0 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+p.entry,
+p.pnl-title {
+    margin: 0;
+    font-size: 8px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+p.price-value,
+p.pnl-value {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+button.edit {
+    /* font-size: 12px; */
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgba(134, 134, 134, 0.5);
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 10px!important;
+    font-weight: bold;
+    /* box-sizing: border-box; */
+}
+
+.label-command {
+    display: block;
+    padding: .2em .6em .3em;
+    font-size: 50%;
+    line-height: 2;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.label-long {
+    background-color: #2BB74A;
+}
+
+
+.label-short {
+    background-color: #B81D1D;
+}
+
+.pnl-win {
+    color: #2BB74A;
+}
+
+.pnl-lose {
+    color: #B81D1D;
+}
+
+.trading-list {
+    min-height: 300px;
+}
+
+.trading-list .col {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.pending,
+.active,
+textarea {
+    border-radius: 10px;
+    padding: 10px 15px 30px 15px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+
+.pending .title h2,
+.active .title h2{
+    padding-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.pending h6,
+.active h6 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.pending table tr,
+.active table tr {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.pending .info,
+.active .info {
+    background-color: #2F2F2F;
+}
+
+.pending .coin,
+.active .coin {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.info.price, .info.pnl {
+    text-align: center;
+}
+
+
+.trader-communication {
+    width: 100%;
+    height: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    color: white;
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+input,
+textarea {
+    font-size: initial !important;
+}
+
+.trading-info {
+    padding: 5px 15px !important;
+}
+
+.action {
+    margin-bottom: 10px;
+}
+
+#modal-trading{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+#modal-trading .modal-content{
+    background-color: black;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#modal-trading h1{
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+#modal-trading h3{
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#modal-trading input:read-only{
+    background-color: grey;
+    color: white;
+}
