@@ -35,3 +35,82 @@
 .owl-item:not(.center) > div:hover {
     opacity: .75;
 }
+section.blog-section {
+    padding: 25px;
+    background-color: transparent;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.home section.blog-section .container{
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.home .blog-inner {
+    background-color: rgb(10, 12, 18);
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+.home .blog-item figure {
+    border: 1px solid darkgrey;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.home .blog-item figure:hover {
+    border: 1px solid #ffffff;
+}
+.home .blog-item figure img {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+.home .blog-item figure:hover img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.home .blog-item .blog-text{
+    background-color: transparent;
+    padding: 0;
+}
+.home .blog-text{
+    color: rgb(152, 162, 179);
+    text-align: justify;
+}
+.home .blog-seemore {
+    background-color: #262626;
+    border-radius: 20px;
+}
+
+.home p.social-header-text,.home .partner-title {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.home p.social-content {
+    color: orange;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.home .text-yellow-500{
+    color: orange;
+}
+.home .cta-home{
+    background-image: linear-gradient(to right, rgba(136, 0, 255, 0.8) 0%, rgb(239, 66, 8) 51%, rgba(185, 0, 255, 0.8) 100%);
+    padding: 10px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 35px;
+    margin-bottom: 50px;
+}

@@ -6,13 +6,13 @@ body{
     /* Full height */
     height: 100%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
-body .container{
-    max-width: 1920px;
-}
+/*body .container{*/
+/*    max-width: 1920px;*/
+/*}*/
 nav.navbar{
     padding: 0;
 }
@@ -92,6 +92,8 @@ li.page-item a:hover{
 .user-header .header-avt {
     border-radius: 50%;
     overflow: hidden;
+    max-width: 65px;
+    max-height: 65px;
 }
 
 .user-header .username, .user-header .user-status{
@@ -105,7 +107,7 @@ p.user-status {
     text-transform: uppercase;
     margin: 0 40px 10px 0;
     text-align: center;
-
+    width: 50%;
 }
 p.username {
     color: white;
@@ -306,4 +308,9 @@ button:disabled{
     background-color: grey!important;
     color: black;
     cursor: default;
+}
+
+footer.footer-section {
+    margin-top: 30px;
+    background-color: black;
 }

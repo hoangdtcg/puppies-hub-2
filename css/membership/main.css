@@ -229,7 +229,7 @@ img.supreme
 }
 .membership button.btn.btn-contact {
     background-image: linear-gradient(to right, rgba(218, 129, 255, 0.8) 0%, rgba(239, 66, 8, 0.8) 51%, rgba(219, 122, 255, 0.8) 100%);
-    padding: 10px 30px;
+    padding: 10px 20px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
