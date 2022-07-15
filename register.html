@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <title>Puppies | Register</title>
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+          crossorigin="anonymous"
+  />
+  <link
+          href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=vietnamese"
+          rel="stylesheet"
+  />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/auth/register.css" />
+</head>
+<body>
+<!-- BODY -->
+<div class="register-container container-fluid">
+  <div class="image-container d-flex mx-auto ml-md-5">
+    <img class="img-fluid" src="../assets/logo.png" alt="logo" />
+  </div>
+
+  <div class="container">
+    <div class="row register-head">
+      <div class="col-lg-6">
+        <div class="register-title d-flex justify-content-lg-end">
+          Đăng ký
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="register-content">Nhập thông tin tài khoản</div>
+
+        <div class="register-sub-content">
+          Nhập thông tin tài khoản và mật khẩu mạnh để bả mật tài khoản của
+          bạn.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form class="form-container container pl-0 pr-0">
+    <div class="form-row form-row-container">
+      <div class="form-group col-lg-6">
+        <label class="auth-label" for="email">Email</label>
+        <input
+                class="auth-input form-control"
+                type="email"
+                name="email"
+                id="email"
+        />
+      </div>
+
+      <div class="form-group col-lg-6">
+        <label class="auth-label" for="name">Họ và tên</label>
+        <input class="auth-input form-control" type="text" />
+      </div>
+
+      <div class="form-group col-lg-6">
+        <label class="auth-label" for="password">Mật khẩu</label>
+        <input
+                class="auth-input form-control"
+                type="password"
+                name="password"
+                id="password"
+        />
+      </div>
+
+      <div class="form-group col-lg-6">
+        <label class="auth-label" for="birthday">Năm sinh</label>
+        <input
+                class="auth-input form-control"
+                type="date"
+                name="birthday"
+                id="birthday"
+        />
+      </div>
+
+      <div class="form-group col-lg-6">
+        <label class="auth-label" for="re_password"
+        >Nhập lại mật khẩu</label
+        >
+        <input
+                class="auth-input form-control"
+                type="password"
+                name="re_password"
+                id="re_password"
+        />
+      </div>
+
+      <div class="form-group col-lg-6">
+        <label class="auth-label" for="phone">Số điện thoại</label>
+        <input
+                class="auth-input form-control"
+                type="tel"
+                name="phone"
+                id="phone"
+        />
+      </div>
+
+      <div class="form-group col-lg-6">
+        <label class="auth-label" for="refferal_code"
+        >Refferal code (Nếu có)</label
+        >
+        <input
+                class="auth-input form-control"
+                type="text"
+                name="refferal_code"
+                id="refferal_code"
+        />
+      </div>
+
+      <div class="form-group col-lg-6">
+        <div class="row mt-md-4">
+          <div class="col-lg-6 mb-3">
+            <div class="custom-control form-control-lg custom-checkbox">
+              <input
+                      type="checkbox"
+                      class="auth-custom-checkbox custom-control-input"
+                      id="tos"
+              />
+              <label
+                      class="auth-custom-label pt-1 pt-lg-0 custom-control-label"
+                      for="tos"
+              >Đã đọc và đồng ý về Term of service.</label
+              >
+            </div>
+
+            <div class="custom-control form-control-lg custom-checkbox">
+              <input
+                      type="checkbox"
+                      class="auth-custom-checkbox custom-control-input"
+                      id="privacy"
+              />
+              <label
+                      class="auth-custom-label pt-1 pt-lg-0 custom-control-label"
+                      for="privacy"
+              >Đã đọc và đồng ý về Privacy policy.</label
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <button type="button" class="btn btn-lg btn-block register-cta">
+              Tiếp theo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div class="rights">
+    <p class="text-center mb-0">
+      2022 Puppies.com. All rights reserved
+    </p>
+  </div>
+</div>
+
+<script
+        src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"
+></script>
+</body>
+</html>

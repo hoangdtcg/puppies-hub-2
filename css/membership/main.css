@@ -117,7 +117,7 @@
     margin-bottom: 147px;
 }
 li.list-group-item {
-    font-family: monospace;
+    font-family: 'Roboto',sans-serif;
     font-size: 14px;
 }
 
@@ -135,7 +135,7 @@ li.list-group-item {
 }
 .card-img-overlay .card-text {
     padding: 10px 5px;
-    font-family: monospace;
+    font-family: 'Roboto',sans-serif;
 }
 .membership .card .card-body {
     padding-top: 180px;
@@ -183,7 +183,7 @@ img.supreme
     margin-bottom: 20px;
 }
 .membership .popup p{
-    font-family: monospace, serif;
+    font-family: 'Roboto',sans-serif, serif;
     color: white;
     font-size: 16px;
     margin: 0;
@@ -221,7 +221,7 @@ img.supreme
 .membership .popup h4.instruct-title {
     margin: 15px 0;
     font-weight: bold;
-    font-family: monospace;
+    font-family: 'Roboto',sans-serif;
 }
 
 .membership .popup img.instruct-img {
@@ -257,7 +257,7 @@ img.supreme
 
 .membership .popup2 h3{
     color:white;
-    font-family:monospace;
+    font-family:'Roboto',sans-serif;
     font-weight:bold;
     margin-bottom: 5px;
     font-size: 16px;
