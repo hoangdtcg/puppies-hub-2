@@ -50,7 +50,7 @@ h6 {
 }
 
 p {
-	font-size: 15.7px;
+	font-size: 16px;
 	color: #75849a;
 	line-height: 1.6;
 }
@@ -816,8 +816,9 @@ ol {
 
 
 .blog-text .blog-title {
-	font-size: 22px;
+	font-size: 18px;
 	margin-bottom: 20px;
+	text-align: left;
 }
 
 .blog-text .blog-title a {
@@ -1113,7 +1114,6 @@ ol {
 	font-size: 11px;
 	text-transform: uppercase;
 	padding: 6px 15px;
-	margin-right: 2px;
 	margin-top: 5px;
 	color: #75849a;
 	background: #f3f7f9;
