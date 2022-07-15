@@ -40,28 +40,75 @@
         <div class="container-fluid">
             <div class="col-12">
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-4 col-4">
                         <a href="index.html" class="site-logo">
                             <div id="logo">
                                 <img src="img/home/logo.png" alt="">
                             </div>
                         </a>
                     </div>
-                    <div class="col-10">
-                        <div id="menu">
-                            <div class="responsive-bar"><i class="fa fa-bars"></i></div>
-                            <a href="" class="user"><i class="fa fa-user"></i></a>
-                            <a href="" class="site-btn sb-gradients ">LOGIN</a>
-                            <nav class="main-menu navbar-default">
-                                <ul class="menu-list">
-                                    <li><a href="">CRYPTO DAILY</a></li>
-                                    <li><a href="">LEADERBOARD</a></li>
-                                    <li><a href="">MEMBERSHIP</a></li>
-                                    <li><a href="">ABOUT US</a></li>
-                                    <li><a href="">CONTACT US</a></li>
-                                </ul>
-                            </nav>
+                    <div class="col-lg-10 col-md-8 col-8">
+<!--                        <div class="col-12">-->
+                            <div class="row">
+                                <div class="col-lg-10 col-9">
+                                    <div id="menu">
+                                        <div class="responsive-bar"><i class="fa fa-bars"></i></div>
+                                    </div>
+                                    <nav class="main-menu navbar-default">
+                                        <ul class="menu-list">
+                                            <li><a href="blog.html">CRYPTO DAILY</a></li>
+                                            <li><a href="leaderboard.html">LEADERBOARD</a></li>
+                                            <li><a href="membership.html">MEMBERSHIP</a></li>
+                                            <li><a href="">ABOUT US</a></li>
+                                            <li><a href="">CONTACT US</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-lg-2 col-3 p-0">
+<!--                                    <a href="" class="site-btn sb-gradients ">LOGIN</a>-->
+                                    <div class="user-header header__navbar-user">
+                                        <div class="col-lg-12 col-12">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-9 p-1">
+                                                    <div class="header-avt border-gradient">
+                                                        <img src="img/leaderboard/avt.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 d-lg-block d-md-block d-none p-1">
+                                                    <p class="username">Eric Tran Nghia</p>
+                                                    <p class="user-status">Free</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__notify">
+                                            <ul class="header__navbar-account">
+                                                <li class="info-header">
+                                                    <div class="avt-header border-gradient">
+                                                        <img src="img/leaderboard/avt.png" alt="">
+                                                    </div>
+                                                    <p class="username-header">Hoang Du Thanh</p>
+                                                    <p class="role-header"><span>Premium</span></p>
+                                                </li>
+                                                <li class="header__navbar-item profile-header">Thông tin cá nhân</li>
+                                                <li class="header__navbar-item trading-header">Thông tin Trading</li>
+                                                <li class="logout">Đăng xuất</li>
+                                                <li class="privacy">
+                                                    <div class="col p-12 t-12 m-12">
+                                                        <div class="row">
+                                                            <div class="col p-6 t-6 m-6 privacy-left">Chính sách quyền riêng tư</div>
+                                                            <div class="col p-6 t-6 m-6 privacy-right">Điều khoản dịch vụ</div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+<!--                            </div>-->
+
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -256,5 +303,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.header__navbar-user').on('click', function (event) {
+
+            event.preventDefault();
+            $(this).find('.header__notify').toggle(200);
+            console.log($(this))
+
+            //Hide menu when clicked outside
+            $(this).mouseleave(function () {
+                var thisUI = $(this);
+                $('html').click(function () {
+                    thisUI.children(".header__notify").hide();
+                    $('html').unbind('click');
+                });
+            });
+
+        });
+    });
+</script>
 </body>
 </html>

@@ -5,11 +5,6 @@
 	src: url("../../fonts/UTM AVOBOLD.TTF");
 }
 
-@font-face {
-	font-family: 'Montserrat';
-	src: url("../../fonts/MONTSERRAT-BOLD.TTF");
-}
-
 html,
 body {
 	height: 100%;
@@ -1619,22 +1614,27 @@ ol {
 /* Large Mobile :480px. */
 
 @media only screen and (max-width: 767px) {
+	body .menu-list li a{
+		margin: 0!important;
+	}
 	.header-section {
-		padding: 30px 0;
-		background: #fff;
+		padding: 15px 0;
+		background: rgb(0, 0, 0);
 	}
 	.header-section .responsive-bar {
 		float: right;
 		font-size: 25px;
 		display: block;
 		cursor: pointer;
+		color: white;
 	}
 	.header-section .user {
 		float: right;
 		font-size: 25px;
-		color: #333;
+		/*color: #333;*/
 		margin-right: 20px;
 		display: block;
+		color: white;
 	}
 	.main-menu {
 		float: none;
@@ -1666,8 +1666,8 @@ ol {
 	}
 	.hero-section {
 		height: auto;
-		padding-bottom: 100px;
-		padding-top: 160px;
+		padding-bottom: 50px;
+		padding-top: 80px;
 		background-position: right 50% top;
 	}
 	.page-info-section {
