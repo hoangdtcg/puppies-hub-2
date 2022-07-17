@@ -85,15 +85,22 @@
                                 <div class="col-md-4 col-12 mb-3">
                                     <div class="row">
                                         <div class="col-md-6 col-12">
-                                            <div class="row">
-                                                <div class="trader-img mb-2">
-                                                    <img class="w-100" src="img/leaderboard/avt.png" alt="">
+                                            <div class="col-12 pr-2">
+                                                <div class="row">
+                                                    <div class="trader-img mb-2">
+                                                        <img class="w-100" src="img/leaderboard/avt.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <button class="btn btn-follow btn-block btn-outline-warning">
+                                                        FOLLOW
+                                                    </button>
+                                                    <button class="btn btn-follow btn-block btn-warning text-white font-weight-bold">
+                                                        FOLLOWING
+                                                    </button>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <button class="btn btn-block btn-outline-warning">FOLLOW</button>
-                                                <button class="btn btn-block btn-warning text-white font-weight-bold">FOLLOWING</button>
-                                            </div>
+
                                         </div>
                                         <div class="col-md-6 col-12">
                                             <div class="row">
@@ -103,375 +110,376 @@
                                                 </div>
                                                 <div class="trader-info w-100 mb-2 text-center">
                                                     <p class="sub-title">PNL</p>
-                                                    <p class="hitrate-value main-value">+86.12%</p>
+                                                    <p class="pnl-value main-value is-high">+86.12%</p>
+                                                    <!--                                                    <p class="pnl-value main-value is-low">-6.12%</p>-->
+                                                </div>
+                                                <div class="trader-info w-100 mb-2 text-center">
+                                                    <p class="sub-title">RATING</p>
+                                                    <p class="star-rating">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </p>
+                                                    <!--                                                    <p class="pnl-value main-value is-low">-6.12%</p>-->
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-5 col-12 mb-3">
+                                <div class="col-md-6 col-12 mb-3">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <button class="btn btn-block btn-success is-selected">LONG</button>
-                                        </div>
-                                        <div class="col-6">
-                                            <button class="btn btn-block btn-danger">SHORT</button>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 entry mt-3">
-                                            <input type="text" class="form-control entry-value" placeholder="ENTRY">
-                                            <p class="error">ENTRY không được để trống</p>
-
-                                        </div>
-                                        <div class="col-12 stop-loss mt-3">
-                                            <input type="text" class="form-control stop-loss-value" placeholder="STOP LOSS">
-                                            <p class="error">SL không được để trống</p>
-                                        </div>
-                                        <div class="col-12 take-profit mt-3">
-                                            <div class="tp1 col-12 mb-2">
-                                                <div class="row">
-                                                    <div class="col-8 p-0">
-                                                        <input type="text" class="form-control tp1-value"
-                                                               placeholder="TAKE PROFIT 1">
-                                                    </div>
-                                                    <div class="col-4 p-0 pl-2">
-                                                        <input type="text" class="form-control tp1-percent" placeholder="%">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="tp2 col-12 mb-2">
-                                                <div class="row">
-                                                    <div class="col-8 p-0">
-                                                        <input type="text" class="form-control tp1-value"
-                                                               placeholder="TAKE PROFIT 1">
-                                                    </div>
-                                                    <div class="col-4 p-0 pl-2">
-                                                        <input type="text" class="form-control tp1-percent" placeholder="%">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="tp3 col-12 mb-2">
-                                                <div class="row">
-                                                    <div class="col-8 p-0">
-                                                        <input type="text" class="form-control tp1-value"
-                                                               placeholder="TAKE PROFIT 1">
-                                                    </div>
-                                                    <div class="col-4 p-0 pl-2">
-                                                        <input type="text" class="form-control tp1-percent" placeholder="%">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 mb-2 p-0">
-                                                <p class="error">Cần tối thiểu 1 TP</p>
+                                        <div class="col-12">
+                                            <div class="trader-info w-100 mb-2 text-center">
+                                                <p class="trader-name trader-box">TRADING NAME</p>
                                             </div>
                                         </div>
-                                        <div class="col-12 risk mt-2">
-                                            <input type="text" class="form-control risk-value text-center"
-                                                   placeholder="RISK (1 - 5%)">
-                                            <p class="error">RISK không được để trống</p>
-
+                                        <div class="col-12">
+                                            <div class="trader-info w-100 mb-2 text-center">
+                                                <p class="trader-style trader-box">TRADER STYLE</p>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-12 btn-action mt-4">
-                                            <button id="buy-btn" class="btn btn-block btn-success btn-buy action-btn">BUY
-                                            </button>
-                                            <button class="btn btn-block btn-danger btn-sell action-btn" disabled>SELL
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-12 mb-3"></div>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="trading-list col-12">
-                            <div class="row">
-                                <div class="col-12 col-md-4 p-1">
-                                    <div class="pending">
                                         <div class="col-12">
                                             <div class="row">
-                                                <div class="title">
-                                                    <h2>Các lệnh đang Pending</h2>
+                                                <div class="col-6">
+                                                    <div class="trader-info w-100 mb-2 text-center">
+                                                        <button class="btn btn-block btn-outline-dark count-follower">
+                                                            192 Follower
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="trader-info w-100 mb-2 text-center">
+                                                        <button class="btn btn-block btn-secondary btn-review" data-toggle="modal"
+                                                                data-target="#modal-review">Đánh
+                                                            giá
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <table>
-                                                    <tr>
-                                                        <td class="info coin">BTC/USDT</td>
-                                                        <td class="info command">
-                                                            <span class="label-command label-long">Long</span>
-                                                        </td>
-                                                        <td class="info price">
-                                                            <p class="entry">Entry</p>
-                                                            <p class="price-value">31,123.07</p>
-                                                        </td>
-                                                        <td>
-                                                            <button class="edit btn" data-toggle="modal"
-                                                                    data-target="#modal-trading">EDIT
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="info coin">BTC/USDT</td>
-                                                        <td class="info command">
-                                                            <span class="label-command label-short">Short</span>
-                                                        </td>
-                                                        <td class="info price">
-                                                            <p class="entry">Entry</p>
-                                                            <p class="price-value">31,123.07</p>
-                                                        </td>
-                                                        <td>
-                                                            <button class="edit btn" data-toggle="modal"
-                                                                    data-target="#modal-trading">EDIT
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="info coin">BTC/USDT</td>
-                                                        <td class="info command">
-                                                            <span class="label-command label-short">Short</span>
-                                                        </td>
-                                                        <td class="info price">
-                                                            <p class="entry">Entry</p>
-                                                            <p class="price-value">31,123.07</p>
-                                                        </td>
-                                                        <td>
-                                                            <button class="edit btn" data-toggle="modal"
-                                                                    data-target="#modal-trading">EDIT
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="info coin">BTC/USDT</td>
-                                                        <td class="info command">
-                                                            <span class="label-command label-short">Short</span>
-                                                        </td>
-                                                        <td class="info price">
-                                                            <p class="entry">Entry</p>
-                                                            <p class="price-value">31,123.07</p>
-                                                        </td>
-                                                        <td>
-                                                            <button class="edit btn" data-toggle="modal"
-                                                                    data-target="#modal-trading">EDIT
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="info coin">BTC/USDT</td>
-                                                        <td class="info command">
-                                                            <span class="label-command label-short">Short</span>
-                                                        </td>
-                                                        <td class="info price">
-                                                            <p class="entry">Entry</p>
-                                                            <p class="price-value">31,123.07</p>
-                                                        </td>
-                                                        <td>
-                                                            <button class="edit btn" data-toggle="modal"
-                                                                    data-target="#modal-trading">EDIT
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </div>
+
                                         </div>
-
-
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-5 p-1">
-                                    <div class="active">
-                                        <div class="col-12">
-                                            <div class="row">
-                                                <div class="title">
-                                                    <h2>Các lệnh đang Active</h2>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <table>
-                                                    <tr>
-                                                        <td class="info coin">BTC/USDT</td>
-                                                        <td class="info command">
-                                                            <span class="label-command label-short">Short</span>
-                                                        </td>
-                                                        <td class="info price">
-                                                            <p class="entry">Entry</p>
-                                                            <p class="price-value">31,123.07</p>
-                                                        </td>
-
-                                                        <td class="info pnl">
-                                                            <p class="pnl-title">PNL</p>
-                                                            <p class="pnl-value pnl-win">+15%</p>
-                                                        </td>
-
-                                                        <td>
-                                                            <button class="edit btn" data-toggle="modal"
-                                                                    data-target="#modal-trading">EDIT
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td class="info coin">BTC/USDT</td>
-                                                        <td class="info command">
-                                                            <span class="label-command label-long">Long</span>
-                                                        </td>
-                                                        <td class="info price">
-                                                            <p class="entry">Entry</p>
-                                                            <p class="price-value">31,123.07</p>
-                                                        </td>
-
-                                                        <td class="info pnl">
-                                                            <p class="pnl-title">PNL</p>
-                                                            <p class="pnl-value pnl-lose">-7%</p>
-                                                        </td>
-
-                                                        <td>
-                                                            <button class="edit btn" data-toggle="modal"
-                                                                    data-target="#modal-trading">EDIT
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-
-                                                </table>
-                                            </div>
+                                <div class="col-md-2 col-12 mb-3">
+                                    <div class="row">
+                                        <div class="trader-info w-100 mb-2 text-center">
+                                            <p class="trader-ranking trader-box">PROFILE</p>
                                         </div>
-
                                     </div>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <div class="trader-communication">
-                                        <textarea placeholder="Trader Communication"></textarea>
+                                    <div class="row">
+                                        <div class="trader-info w-100 mb-2 text-center">
+                                            <img src="img/certificate.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
+
+                        <div class="row">
+                            <div class="trading-list col-12">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 p-1">
+                                        <div class="pending review">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="title">
+                                                        <h2>Đánh giá</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <table>
+                                                        <tr class="review-user text-white mb-2">
+                                                            <td class="review-title">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-6">
+                                                                            <p class="reviewer-name mb-1">By
+                                                                                <span style="color: orange">Ericxspace</span></p>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <p class="review-date text-right mb-1">July 18,
+                                                                                2022</p>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <p class="star-rating">
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star"></span>
+                                                                                <span class="fa fa-star"></span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <p class="review-content">
+                                                                                Lorem Ipsum is simply dummy text of the printing and
+                                                                                typesetting industry.
+                                                                                Lorem Ipsum has been the industry’s standard dummy text
+                                                                                ever since the 1500s...
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="review-user text-white mb-2">
+                                                            <td class="review-title">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-6">
+                                                                            <p class="reviewer-name mb-1">By
+                                                                                <span style="color: orange">Ericxspace</span></p>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <p class="review-date text-right mb-1">July 18,
+                                                                                2022</p>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <p class="star-rating">
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star"></span>
+                                                                                <span class="fa fa-star"></span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <p class="review-content">
+                                                                                Lorem Ipsum is simply dummy text of the printing and
+                                                                                typesetting industry.
+                                                                                Lorem Ipsum has been the industry’s standard dummy text
+                                                                                ever since the 1500s...
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 p-1">
+                                        <div class="row">
+                                            <div class="col-12 col-md-5 pr-1">
+                                                <div class="pending">
+                                                    <div class="col-12">
+                                                        <div class="row">
+                                                            <div class="title">
+                                                                <h2>Các lệnh đang Pending</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <table>
+                                                                <tr>
+                                                                    <td class="info coin">BTC/USDT</td>
+                                                                    <td class="info command">
+                                                                        <span class="label-command label-long">Long</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="info coin">BTC/USDT</td>
+                                                                    <td class="info command">
+                                                                        <span class="label-command label-short">Short</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="info coin">BTC/USDT</td>
+                                                                    <td class="info command">
+                                                                        <span class="label-command label-short">Short</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="info coin">BTC/USDT</td>
+                                                                    <td class="info command">
+                                                                        <span class="label-command label-short">Short</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="info coin">BTC/USDT</td>
+                                                                    <td class="info command">
+                                                                        <span class="label-command label-short">Short</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-7 pl-1">
+                                                <div class="active">
+                                                    <div class="col-12">
+                                                        <div class="row">
+                                                            <div class="title">
+                                                                <h2>Các lệnh đang Active</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <table>
+                                                                <tr>
+                                                                    <td class="info coin">BTC/USDT</td>
+                                                                    <td class="info command">
+                                                                        <span class="label-command label-short">Short</span>
+                                                                    </td>
+
+                                                                    <td class="info pnl">
+                                                                        <p class="pnl-title">PNL</p>
+                                                                        <p class="pnl-value pnl-win">+15%</p>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td class="info coin">BTC/USDT</td>
+                                                                    <td class="info command">
+                                                                        <span class="label-command label-long">Long</span>
+                                                                    </td>
+
+                                                                    <td class="info pnl">
+                                                                        <p class="pnl-title">PNL</p>
+                                                                        <p class="pnl-value pnl-lose">-7%</p>
+                                                                    </td>
+                                                                </tr>
+
+                                                            </table>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 p-1">
+                                        <div class="history active">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="title">
+                                                        <h2>Lịch sử</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="info coin">BTC/USDT</td>
+                                                            <td class="info command">
+                                                                <span class="label-command label-short">Short</span>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="info coin">BTC/USDT</td>
+                                                            <td class="info command">
+                                                                <span class="label-command label-long">Long</span>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-2 sidebar side-right pl-2 pr-2">
-                    <div class="row">
-                        <div class="col-12 mb-2">
-                            <img src="img/ads-1.png" alt="" class="w-100">
-                        </div>
-                        <div class="col-12">
-                            <img src="img/ads-2.png" alt="" class="w-100">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="popup">
-
-            <!-- Modal -->
-            <div class="modal fade" id="modal-trading" tabindex="-1" aria-labelledby="exampleModalLabel"
-                 aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="board-title text-effect"><h1>Chỉnh sửa lệnh</h1></div>
-                                    </div>
-
-                                    <div class="col-6 text-right">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                </div>
+                    <div class="col-2 sidebar side-right pl-2 pr-2">
+                        <div class="row">
+                            <div class="col-12 mb-2">
+                                <img src="img/ads-1.png" alt="" class="w-100">
                             </div>
-                        </div>
-                        <div class="modal-body">
                             <div class="col-12">
-                                <div class="row">
-                                    <div class="col-6 entry mt-1">
-                                        <h3 class="modal-trading-title">ENTRY</h3>
-                                        <input type="text" class="form-control entry-value" placeholder="ENTRY"
-                                               readonly>
-                                    </div>
-                                    <div class="col-6 risk mt-1">
-                                        <h3 class="modal-trading-title">RISK</h3>
-                                        <input type="text" class="form-control risk-value" placeholder="RISK (1 - 5%)"
-                                               readonly>
-                                    </div>
-                                    <div class="col-12 stop-loss mt-3">
-                                        <h3 class="modal-trading-title">STOP LOSS</h3>
-                                        <input type="text" class="form-control stop-loss-value" placeholder="STOP LOSS">
-                                    </div>
-                                    <div class="col-12 take-profit mt-3">
-                                        <h3 class="modal-trading-title">PROFIT</h3>
-                                        <div class="tp1 col-12 mb-2">
-                                            <div class="row">
-                                                <div class="col-8 p-0">
-                                                    <input type="text" class="form-control tp1-value"
-                                                           placeholder="TAKE PROFIT 1">
-                                                </div>
-                                                <div class="col-4 p-0 pl-2">
-                                                    <input type="text" class="form-control tp1-percent" placeholder="%">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tp2 col-12 mb-2">
-                                            <div class="row">
-                                                <div class="col-8 p-0">
-                                                    <input type="text" class="form-control tp1-value"
-                                                           placeholder="TAKE PROFIT 1">
-                                                </div>
-                                                <div class="col-4 p-0 pl-2">
-                                                    <input type="text" class="form-control tp1-percent" placeholder="%">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tp3 col-12 mb-2">
-                                            <div class="row">
-                                                <div class="col-8 p-0">
-                                                    <input type="text" class="form-control tp1-value"
-                                                           placeholder="TAKE PROFIT 1">
-                                                </div>
-                                                <div class="col-4 p-0 pl-2">
-                                                    <input type="text" class="form-control tp1-percent" placeholder="%">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 take-profit mt-3">
-                                        <h3 class="modal-trading-title">NOTE</h3>
-                                        <div class="tp1 col-12 mb-2">
-                                            <div class="row">
-                                                <div class="col-12 p-0">
-                                                    <textarea style="background-color: #2f2f2f" class="w-100" rows="5"
-                                                              placeholder="Note of Command"></textarea>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-md-4 col-12 mb-2"><button type="button" class="btn btn-block btn-secondary" data-dismiss="modal">Đóng</button></div>
-                                    <div class="col-md-4 col-12 mb-2"><button type="button" class="btn btn-block btn-danger" data-dismiss="modal">Đóng lệnh</button></div>
-                                    <div class="col-md-4 col-12 mb-2"><button type="button" class="btn btn-block btn-success" data-dismiss="modal">Cập nhật</button></div>
-                                </div>
+                                <img src="img/ads-2.png" alt="" class="w-100">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="popup">
 
+                <!-- Modal -->
+                <div class="modal fade" id="modal-review" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark" style="border-radius: 20px">
+                            <div class="modal-header">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="review-title text-effect font-weight-bold"><h3 class="font-weight-bold">Đánh giá</h3></div>
+                                        </div>
+
+                                        <div class="col-6 text-right">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="row">
+                                                <div class="reviewer-avt w-100">
+                                                    <img src="img/leaderboard/avt.png" class="w-100" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="w-100 mt-2 text-center">
+                                                    <p class="sub-title">RATING</p>
+                                                    <p class="star-rating">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </p>
+                                                    <!--                                                    <p class="pnl-value main-value is-low">-6.12%</p>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="reviewer-box">
+                                                <textarea name="" id="" cols="30" rows="5" placeholder="Nhận xét" class="w-100"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6"></div>
+                                        <div class="col-md-3 col-12 mb-2">
+                                            <button type="button" class="btn btn-block btn-secondary"
+                                                    data-dismiss="modal">Đóng
+                                            </button>
+                                        </div>
+
+                                        <div class="col-md-3 col-12 mb-2">
+                                            <button type="button" class="btn btn-block btn-success"
+                                                    data-dismiss="modal">Đánh giá
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </div>
 

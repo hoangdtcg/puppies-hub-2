@@ -164,3 +164,51 @@
 .trader-detail p.price-value{
     color: white;
 }
+
+.trader-detail .trader-info.w-100.mb-2.text-center {
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.trader-detail p.sub-title {
+    color: #989898;
+    font-size: 12px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    box-sizing:border-box;
+    border-radius: 10px;
+}
+
+.trader-detail p.main-value {
+    font-size: 25px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.trader-detail p.hitrate-value.main-value {
+    color:white
+}
+
+.trader-detail p.pnl-value.is-high {
+    color:green
+}
+.trader-detail p.pnl-value.is-low {
+    color:darkred
+}
+
+.trader-detail .star-rating{
+    margin-bottom: 0;
+}
+.trader-detail .checked{
+    color: orange;
+}
+
+.trader-detail p.trader-box  {
+    padding: 20px 10px;
+    margin-bottom: 0;
+    color: white;
+    font-weight: bold;
+}
+.trader-detail p.trader-name{
+    color: orange;
+}
