@@ -1,0 +1,42 @@
+.about-us .cta-about-us{
+    background-image: linear-gradient(to right, rgba(136, 0, 255, 0.8) 0%, rgb(239, 66, 8) 51%, rgba(185, 0, 255, 0.8) 100%);
+    padding: 10px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.about-us .social-title,.about-us .partner-title {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.about-us .about-text {
+    text-align:center;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+.about-us .div-1{
+    color:orange;
+    font-style: italic;
+}
+
+
+@media screen and (min-width: 1440px) {
+    .about-us .div-1{
+        padding: 0 100px;
+    }
+
+    .about-us .div-2{
+        padding: 0 50px;
+    }
+}

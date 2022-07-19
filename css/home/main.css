@@ -1,3 +1,6 @@
+.home .container{
+    max-width: 100%!important;
+}
 
 .banner{
     width: 100%;
