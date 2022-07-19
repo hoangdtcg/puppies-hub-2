@@ -11,7 +11,8 @@
 }
 
 .leaderboard .weekly{
-    background-color: rgba(0, 0, 0, 0.3)!important;
+    background-color: rgb(137 137 137 / 30%);
+    border: none;
     margin-top: 50px;
 }
 
@@ -128,7 +129,7 @@ table .trader-rank td{
     color: green;
 }
 .trader-rank .pnl .pnl-value.is-low{
-    color: darkred;
+    color: orangered;
 }
 select.filter, button.see-more,.search-trader {
     /*height: 30px;*/

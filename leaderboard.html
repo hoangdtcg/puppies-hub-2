@@ -75,31 +75,35 @@
     <section class="leaderboard-page">
         <div class="container">
             <div class="row">
-                <div class="col-2 sidebar side-left pl-2 pr-2">
+                <div class="col-2 sidebar side-left pl-2 pr-2 d-none d-xl-block d-md-block d-lg-block">
                     <div class="row">
                         <div class="col-12 mb-2">
-                            <div id="sidebar-wrapper">
-                                <ul class="sidebar-nav nav-pills nav-stacked" id="menu-category">
-                                    <li class="active">
-                                        <a href="#"><i class="fa fa-home"></i><span>HOME</span></a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="#"><i class="fa fa-fire"></i><span>GIAO DỊCH FUTURE</span></a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="#"><i class="fa fa-bar-chart"></i><span>GIAO DỊCH SPOT (coming soon)</span></a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="#"><i class="fa fa-binoculars"></i><span>GIAO DỊCH NFT (coming soon)</span></a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="#"><i class="fa fa-book"></i><span>DEFI farming (coming soon)</span></a>
-                                    </li>
-                                </ul>
+                            <div class="banner-main">
+                                <div id="sidebar-wrapper">
+                                    <ul class="sidebar-nav nav-pills nav-stacked" id="menu-category">
+                                        <li class="active">
+                                            <a href="#"><i class="fa fa-fire"></i><span>GIAO DỊCH FUTURE</span></a>
+                                        </li>
+                                        <li class="coming">
+                                            <a href="#"><i
+                                                    class="fa fa-bar-chart"></i><span>GIAO DỊCH SPOT</span></a>
+                                        </li>
+                                        <li class="coming">
+                                            <a href="#"><i
+                                                    class="fa fa-binoculars"></i><span>GIAO DỊCH NFT</span></a>
+                                        </li>
+                                        <li class="coming">
+                                            <a href="#"><i
+                                                    class="fa fa-book"></i><span>DEFI Farming</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12">
-                            <img src="img/ads-2.png" alt="" class="w-100">
+                            <div class="banner-sub">
+                                <img src="img/ads-1.png" alt="" class="w-100">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,13 +119,14 @@
                                         <option value="">HITRATE</option>
                                         <option value="">PNL</option>
                                     </select>
-                                    <button class="btn btn-secondary see-more" data-toggle="modal" data-target="#modal-leaderboard">
+                                    <button class="btn btn-secondary see-more" data-toggle="modal"
+                                            data-target="#modal-leaderboard">
                                         See more...
                                     </button>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-6 list-rank">
+                                <div class="col-md-6 col-xl-6 col-sm-12 list-rank">
                                     <table class="table ranking">
                                         <tr class="trader-rank">
                                             <td class="rank tex-effect">01.</td>
@@ -288,7 +293,7 @@
 
                                     </table>
                                 </div>
-                                <div class="col-6 list-rank">
+                                <div class="col-md-6 col-xl-6 col-sm-12 list-rank">
                                     <table class="table ranking">
                                         <tr class="trader-rank">
                                             <td class="rank">07.</td>
@@ -471,13 +476,14 @@
                                         <option value="">HITRATE</option>
                                         <option value="">PNL</option>
                                     </select>
-                                    <button class="btn btn-secondary see-more" data-toggle="modal" data-target="#modal-leaderboard">
+                                    <button class="btn btn-secondary see-more" data-toggle="modal"
+                                            data-target="#modal-leaderboard">
                                         See more...
                                     </button>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-6 list-rank">
+                                <div class="col-md-6 col-xl-6 col-sm-12 list-rank">
                                     <table class="table ranking">
                                         <tr class="trader-rank">
                                             <td class="rank tex-effect">01.</td>
@@ -644,7 +650,7 @@
 
                                     </table>
                                 </div>
-                                <div class="col-6 list-rank">
+                                <div class="col-md-6 col-xl-6 col-sm-12 list-rank">
                                     <table class="table ranking">
                                         <tr class="trader-rank">
                                             <td class="rank">07.</td>
@@ -817,13 +823,17 @@
                     </div>
 
                 </div>
-                <div class="col-2 sidebar side-right pl-2 pr-2">
+                <div class="col-2 sidebar side-right pl-2 pr-2 d-none d-xl-block d-md-block d-lg-block">
                     <div class="row">
                         <div class="col-12 mb-2">
-                            <img src="img/ads-1.png" alt="" class="w-100">
+                            <div class="banner-main">
+                                <img src="img/ads-2.png" alt="" class="w-100">
+                            </div>
                         </div>
                         <div class="col-12">
-                            <img src="img/ads-2.png" alt="" class="w-100">
+                            <div class="banner-sub">
+                                <img src="img/ads-1.png" alt="" class="w-100">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -832,7 +842,8 @@
         <div class="popup">
 
             <!-- Modal -->
-            <div class="modal fade" id="modal-leaderboard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modal-leaderboard" tabindex="-1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1196,7 +1207,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
     </div>
 </footer>
-
 
 
 <!--====== Javascripts & Jquery ======-->

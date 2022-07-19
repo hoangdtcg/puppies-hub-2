@@ -6,9 +6,13 @@
 }
 
 .membership-container {
-    background: #000 url(../../assets/background_1.png);
+    /*background: #000 url(../../assets/background_1.png);*/
     background-size: cover;
     /* padding-top: 8.875rem; */
+}
+
+.pricing-container{
+    padding: 0 30px;
 }
 
 .membership-head-title {
@@ -21,47 +25,16 @@
     margin-bottom: 6.25rem;
 }
 
-.card {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 16px;
-}
 
-.card-usage {
-    background: rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-    font-weight: 900;
-    font-size: 1.5rem;
-    line-height: 30px;
-    color: #ffa927;
-}
-.card-img-overlay{
-    top: -20px;
-}
-.card-img-overlay .card-title{
-    margin-bottom: 0rem;
-}
-.list-group-item {
-    background: rgba(0, 0, 0, 0.9);
-    border: 1px solid #b6b6b6;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.no-item {
-    color: #b81d1d;
-}
 
 .cta-membership-btn {
-    display: block;
-    width: 100%;
+    /*display: block;*/
+    /*width: 100%;*/
     background: #ffa927;
-    border-radius: 10px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 35px;
+    border-radius: 5px;
+    /*font-style: normal;*/
+    /*font-weight: 500;*/
+    /*line-height: 35px;*/
     text-align: center;
     color: #000000;
 }
@@ -122,47 +95,7 @@
     color: #000000;
     margin-bottom: 147px;
 }
-li.list-group-item {
-    font-family: 'Roboto',sans-serif;
-    font-size: 14px;
-}
 
-.membership  .card-footer .btn:hover {
-    color: white;
-    cursor:pointer;
-}
-
-.membership .card-img-overlay {
-    bottom: 100px;
-}
-.coming-soon{
-    font-size: 25px;
-}
-.card-img-overlay .card-text {
-    padding: 10px 5px;
-    font-family: 'Roboto',sans-serif;
-}
-.membership .card .card-body {
-    padding-top: 160px;
-}
-.membership .card img {
-    max-width: 100%;
-    position: absolute;
-    top: 0;
-}
-img.basic {
-    top: -10px!important;
-}
-img.basic-plus {
-    top: -10px!important;
-}
-img.premium{
-    top: -20px!important;
-}
-img.supreme
-{
-    top: -30px!important;
-}
 
 .membership .modal-dialog{
     width: 80%;
@@ -181,6 +114,24 @@ img.supreme
     background-size: cover;
     border-radius: 20px;
     padding: 30px;
+}
+
+.membership .package {
+    position: relative;
+}
+
+.membership .pack-btn {
+    position: absolute;
+    bottom: 10%;
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.membership .pack-btn button{
+    font-weight: bold;
 }
 
 .membership .modal-header{
