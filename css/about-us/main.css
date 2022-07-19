@@ -30,6 +30,31 @@
     font-style: italic;
 }
 
+.about-us .effect-area {
+    padding: 25px;
+    background: #000000;
+    background-image: url("../../img/home/background.png");
+    /* Full height */
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.about-us .content-div ul{
+    list-style: none;
+}
+
+.about-us .content-div ul li{
+    list-style: none;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 10px;
+}
 
 @media screen and (min-width: 1440px) {
     .about-us .div-1{

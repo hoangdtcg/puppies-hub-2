@@ -1,0 +1,8 @@
+.contact-us input,.contact-us textarea{
+    background-color: rgba(89, 89, 89, 0.5);
+    color: white;
+    border: none;
+}
+.contact-us .sub-content{
+    color: #5c5c5c;
+}
