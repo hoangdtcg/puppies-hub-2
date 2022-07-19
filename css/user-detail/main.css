@@ -6,8 +6,11 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .user-detail .user-detail-container {
-        height: 100vh;
+    /*.user-detail .user-detail-container {*/
+    /*    height: 100vh;*/
+    /*}*/
+    .user-detail .user-detail-left{
+        padding-left: 100px;
     }
 }
 
@@ -174,7 +177,7 @@
     }
 }
 
-@media screen and (width: 1440px) {
+@media screen and (max-width: 768px) {
     .user-detail .money-container-left {
         margin-right: 0 !important;
     }
@@ -211,4 +214,16 @@
 
 .user-detail .img-user-detail {
     width: 100%;
+}
+
+.user-detail .user-bg {
+    padding: 50px;
+    background: #000000;
+    background-image: url("../../img/user-detail/background_user_detail.png");
+    /* Full height */
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 10px;
 }

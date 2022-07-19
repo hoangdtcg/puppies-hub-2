@@ -212,3 +212,24 @@
 .trader-detail p.trader-name{
     color: orange;
 }
+
+@media screen and (min-width: 1440px) {
+    /*.user-detail .user-detail-container {*/
+    /*    height: 100vh;*/
+    /*}*/
+    .trader-detail .trader-detail-left{
+        padding-left: 100px;
+    }
+}
+
+.trader-detail .round-bg {
+    padding: 50px;
+    background: #000000;
+    background-image: url("../../img/user-detail/background_user_detail.png");
+    /* Full height */
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
