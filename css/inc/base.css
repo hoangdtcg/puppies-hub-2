@@ -284,8 +284,9 @@ li.logout:hover {
 
 li.privacy {
     color: wheat;
-    font-size: 12px;
+    font-size: 10px;
     padding-bottom: 20px;
+    text-align: justify-all;
 }
 
 button.close{
