@@ -52,16 +52,16 @@ body .menu-list li a {
     font-size: 16px;
     font-weight: bold;
     padding: 10px 5px;
-    margin-right: 25px;
+    margin-right: 5px;
     color: #fff;
 }
 
 nav.main-menu.navbar-default {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 5px;
-    /* text-align: center; */
+    text-align: center;
     border-radius: 15px;
-    margin-right: 15px;
+    /*margin-right: 15px;*/
 }
 nav.main-menu.navbar-default li{
     width:100%;
@@ -69,6 +69,29 @@ nav.main-menu.navbar-default li{
     text-align:center;
 }
 
+nav .search-box input{
+    background-color: rgba(69, 69, 69, 0.5);
+    border-radius: 15px;
+    font-family: "Avo",sans-serif;
+    color: white;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+}
+
+nav .search-box input:focus{
+    background-color: rgba(69, 69, 69, 0.5)!important;
+    font-family: "Avo",sans-serif;
+    color: white;
+    border: 1px solid grey;
+    font-style: normal;
+    font-weight: normal;
+}
+
+nav .search-box input::placeholder{
+    font-style: italic;
+    font-weight: lighter;
+}
 
 .menu-list li a:hover{
     background: -webkit-linear-gradient(yellow, orangered);
@@ -168,6 +191,11 @@ p.username {
 .header__notify .header__navbar-item{
     padding: 10px 15px;
     margin-bottom: 10px;
+}
+
+.header__notify .header__navbar-item.account-upgrade{
+    background-color: orange;
+    color: black;
 }
 
 .header__navbar-item:hover {
