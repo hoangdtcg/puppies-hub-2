@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dashboard Puppies Hub</title>
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-sidebar-dark sidebar sidebar-dark accordion" id="accordionSidebar">
+
+
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center mt-2 mb-3 pt-5 pb-5" href="index.html">
+            <img src="img/logo-admin-light.png" alt="" class="w-100">
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="index.html">
+                <i class="fas fa-fw fa-home font-gradient"></i>
+                <span>Dashboard</span></a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <li class="nav-item">
+            <a class="nav-link collapsed font-weight-bold" href="#" data-toggle="collapse" data-target="#collapseUser"
+               aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fas fa-fw fa-users font-gradient"></i>
+                <span>User Management</span>
+            </a>
+            <div id="collapseUser" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-sidebar-dark py-2 collapse-inner nav-item rounded">
+                    <a class="collapse-item text-secondary" href="">All User</a>
+                    <a class="collapse-item text-secondary" href="">Trader</a>
+                    <a class="collapse-item text-secondary" href="">Subscriptions</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+        <!-- Divider -->
+
+
+        <li class="nav-item">
+            <a class="nav-link collapsed font-weight-bold f" href="#" data-toggle="collapse"
+               data-target="#collapsePackage"
+               aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fas fa-fw fa-box font-gradient"></i>
+                <span>Package Membership</span>
+            </a>
+            <div id="collapsePackage" class="collapse show" aria-labelledby="headingTwo"
+                 data-parent="#accordionSidebar">
+                <div class="bg-sidebar-dark py-2 collapse-inner nav-item rounded">
+                    <a class="collapse-item text-secondary" href="">Packages</a>
+                    <a class="collapse-item text-secondary" href="">Transactions</a>
+                </div>
+            </div>
+        </li>
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+        <!-- Divider -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed font-weight-bold" href="#" data-toggle="collapse" data-target="#collapseBlog"
+               aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fas fa-fw fa-blog font-gradient"></i>
+                <span>Crypto Content</span>
+            </a>
+            <div id="collapseBlog" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-sidebar-dark py-2 collapse-inner nav-item rounded">
+                    <a class="collapse-item text-secondary" href="">List Posts</a>
+                    <a class="collapse-item text-secondary" href="">Categories</a>
+                </div>
+            </div>
+        </li>
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+        <!-- Divider -->
+
+
+        <div class="text-center d-none d-md-inline">
+            <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                <!-- Sidebar Toggle (Topbar) -->
+                <form class="form-inline">
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </form>
+
+
+                <!-- Topbar Navbar -->
+                <ul class="navbar-nav ml-auto">
+
+                    <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                    <li class="nav-item dropdown no-arrow d-sm-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <!-- Dropdown - Messages -->
+                        <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                             aria-labelledby="searchDropdown">
+                            <form class="form-inline mr-auto w-100 navbar-search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light border-0 small"
+                                           placeholder="Search for..." aria-label="Search"
+                                           aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+
+                    <!-- Nav Item - User Information -->
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                            <img class="img-profile rounded-circle"
+                                 src="img/undraw_profile.svg">
+                        </a>
+                        <!-- Dropdown - User Information -->
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                             aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Settings
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Activity Log
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </nav>
+            <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <h1 class="h3 mb-2 text-uppercase text-gray-800">Quản lý người dùng</h1>
+
+                <!-- DataTales Example -->
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <div class="row">
+                            <div class="col-6 align-middle pt-2 pb-2">
+                                <h6 class="m-0 text-uppercase text-dark font-weight-bold text-primary">Danh sách người dùng</h6>
+                            </div>
+                            <div class="col-6 text-right">
+                                <button class="btn btn-warning">Thêm mới +</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Họ và Tên</th>
+                                    <th>Email</th>
+                                    <th>Telegram</th>
+                                    <th>Vai trò</th>
+                                    <th>Trạng thái</th>
+                                    <th>Tác vụ</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Tran Dai Nghia</td>
+                                    <td>eric@gmail.com</td>
+                                    <td>@ericxspace</td>
+                                    <td>
+                                        <span class="btn-outline-success">Trader</span>
+                                        <span class="btn-outline-secondary">User</span>
+                                        <span class="btn-outline-primary">Admin</span>
+                                        <span class="btn-outline-info">Trial</span>
+                                        <span class="btn-outline-warning">Premium</span>
+                                        <span class="btn-outline-danger">Supreme</span>
+                                    </td>
+                                    <td>
+                                                <span class="btn btn-success btn-circle btn-sm disabled">
+                                                    <i class="fas fa-check"></i>
+                                                </span>
+                                        <span class="pl-2 text-success">Active</span>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-info btn-sm btn-lg" data-toggle="modal"
+                                           data-target="#updateUserModal">
+                                            <i class="fas fa-pen"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Nguyễn Minh Quân</td>
+                                    <td>quan@gmail.com</td>
+                                    <td>@quanpc99</td>
+                                    <td>
+                                        <span class="btn-outline-success">Trader</span>
+                                        <span class="btn-outline-secondary">User</span>
+                                        <span class="btn-outline-primary">Admin</span>
+                                        <span class="btn-outline-info">Trial</span>
+                                        <span class="btn-outline-warning">Premium</span>
+                                        <span class="btn-outline-danger">Supreme</span>
+                                    </td>
+                                    <td>
+                                                <span class="btn btn-danger btn-circle btn-sm disabled">
+                                                    <i class="fas fa-lock"></i>
+                                                </span>
+                                        <span class="pl-2 text-danger">Deactive</span>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-info btn-sm btn-lg" data-toggle="modal"
+                                           data-target="#updateUserModal">
+                                            <i class="fas fa-pen"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright &copy; Your Website 2022</span>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!--Edit modal-->
+<div class="modal fade" id="updateUserModal" tabindex="-1" aria-labelledby="updateUserLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateUserLabel">Cập nhật thông tin người dùng</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="username-update">Họ và tên</label>
+                                    <input type="text" class="form-control" id="username-update">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email-update">Email</label>
+                                    <input type="text" class="form-control" id="email-update">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telegram-update">Telegram</label>
+                                    <input type="text" class="form-control" id="telegram-update">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="status-update">Vai trò</label>
+                                    <select id="status-update" class="form-control">
+                                        <option selected>Active</option>
+                                        <option>Deactive</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="role-update">Vai trò</label>
+                                    <select id="role-update" class="form-control">
+                                        <option selected>Free</option>
+                                        <option>Trial</option>
+                                        <option>Premium</option>
+                                        <option>Supreme</option>
+                                        <option>Trader</option>
+                                        <option>Admin</option>
+                                        <option>Content Writer</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="buyday-update">Ngày gia hạn</label>
+                                    <input type="date" class="form-control" id="buyday-update" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="expire-update">Ngày hết hạn</label>
+                                    <input type="date" class="form-control" id="expire-update" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Huỷ</button>
+                <button type="button" class="btn btn-success">Cập nhật</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin-2.min.js"></script>
+
+<!-- Page level plugins -->
+<script src="vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="js/demo/datatables-demo.js"></script>
+
+</body>
+
+</html>

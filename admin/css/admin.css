@@ -1,0 +1,10 @@
+.sidebar .nav-item .collapse .collapse-inner .collapse-item:hover, .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover{
+    background-color: rgba(137, 137, 137, 0.5);
+    color: whitesmoke!important;
+}
+.font-gradient{
+    background: -webkit-linear-gradient(yellow, orangered);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
