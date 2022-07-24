@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard Puppies Hub</title>
+    <title>Dashboard | New Content</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,12 +17,19 @@
             href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
             rel="stylesheet">
 
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <!-- Plugins css -->
+    <link href="vendor/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.1/css/dropify.min.css" rel="stylesheet" type="text/css">
+    <!-- Summernote css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.css" rel="stylesheet" type="text/css">
+
     <!-- Custom styles for this template -->
     <link href="css/sb-admin-2.css" rel="stylesheet">
     <link href="css/admin.css" rel="stylesheet">
 
-    <!-- Custom styles for this page -->
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 
 </head>
 
@@ -200,14 +207,14 @@
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-uppercase text-gray-800">Quản lý người dùng</h1>
+                <h1 class="h3 mb-2 text-uppercase text-gray-800">Bài viết mới</h1>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
                         <div class="row">
                             <div class="col-6 align-middle pt-2 pb-2">
-                                <h6 class="m-0 text-uppercase text-dark font-weight-bold text-primary">Danh sách người dùng</h6>
+                                <h6 class="m-0 text-uppercase text-dark font-weight-bold text-primary">Thông tin bài viết</h6>
                             </div>
                             <div class="col-6 text-right">
                                 <button class="btn btn-warning">Thêm mới +</button>
@@ -216,76 +223,113 @@
                     </div>
 
                     <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Họ và Tên</th>
-                                    <th>Email</th>
-                                    <th>Telegram</th>
-                                    <th>Vai trò</th>
-                                    <th>Trạng thái</th>
-                                    <th>Tác vụ</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Tran Dai Nghia</td>
-                                    <td>eric@gmail.com</td>
-                                    <td>@ericxspace</td>
-                                    <td>
-                                        <span class="btn-outline-success">Trader</span>
-                                        <span class="btn-outline-secondary">User</span>
-                                        <span class="btn-outline-primary">Admin</span>
-                                        <span class="btn-outline-info">Trial</span>
-                                        <span class="btn-outline-warning">Premium</span>
-                                        <span class="btn-outline-danger">Supreme</span>
-                                    </td>
-                                    <td>
-                                                <span class="btn btn-success btn-circle btn-sm disabled">
-                                                    <i class="fas fa-check"></i>
-                                                </span>
-                                        <span class="pl-2 text-success">Active</span>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-info btn-sm btn-lg" data-toggle="modal"
-                                           data-target="#updateUserModal">
-                                            <i class="fas fa-pen"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Nguyễn Minh Quân</td>
-                                    <td>quan@gmail.com</td>
-                                    <td>@quanpc99</td>
-                                    <td>
-                                        <span class="btn-outline-success">Trader</span>
-                                        <span class="btn-outline-secondary">User</span>
-                                        <span class="btn-outline-primary">Admin</span>
-                                        <span class="btn-outline-info">Trial</span>
-                                        <span class="btn-outline-warning">Premium</span>
-                                        <span class="btn-outline-danger">Supreme</span>
-                                    </td>
-                                    <td>
-                                                <span class="btn btn-danger btn-circle btn-sm disabled">
-                                                    <i class="fas fa-lock"></i>
-                                                </span>
-                                        <span class="pl-2 text-danger">Deactive</span>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-info btn-sm btn-lg" data-toggle="modal"
-                                           data-target="#updateUserModal">
-                                            <i class="fas fa-pen"></i>
-                                        </a>
-                                    </td>
-                                </tr>
+                        <form action="" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-xl-6 col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-12">
+                                                    <div class="form-horizontal">
+                                                        <div class="form-group row">
+                                                            <label class="col-12 col-form-label" for="example-palaceholder">Tiêu
+                                                                đề</label>
+                                                            <div class="col-12">
+                                                                <input type="text" class="form-control"
+                                                                       id="example-palaceholder"
+                                                                       placeholder="Tiêu đề bài viết...">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-12 col-form-label">Chuyên mục</label>
+                                                            <div class="col-12">
+                                                                <select class="form-control">
+                                                                    <option>Insight</option>
+                                                                    <option>Analytics</option>
+                                                                    <option>Alpha Leak</option>
+                                                                    <option>Education</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-12 col-form-label">Ghim bài viết</label>
+                                                            <div class="col-12">
+                                                                <select class="form-control">
+                                                                    <option>Không ghim</option>
+                                                                    <option>Ghim ở đầu tiên</option>
+                                                                    <option>Ghim ở phần thứ 2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
 
-                                </tbody>
-                            </table>
-                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-12 col-form-label">Hiển thị ở Trang chủ</label>
+                                                            <div class="col-12">
+                                                                <select class="form-control">
+                                                                    <option selected>Không</option>
+                                                                    <option>Có</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div> <!-- end card-body-->
+                                    </div> <!-- end card-->
+                                </div><!-- end col -->
+                                <div class="col-xl-6 col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title">Upload Image</h4>
+                                            <p class="sub-header">
+                                                Ảnh bìa của bài viết.
+                                            </p>
+
+                                            <input type="file" class="dropify" data-height="300">
+
+                                        </div> <!-- end card-body-->
+                                    </div> <!-- end card-->
+                                </div><!-- end col -->
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title">Content Editor</h4>
+                                            <p class="sub-header">Viết nội dung chính tại đây</p>
+                                            <div id="summernote-editor">
+                                                <p>Viết nội dung bài viết vào đây...</p>
+                                                <!--                                        Content nằm trong đây-->
+                                            </div> <!-- end summernote-editor-->
+                                        </div> <!-- end card-body-->
+                                    </div> <!-- end card-->
+                                </div><!-- end col -->
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-12"></div>
+                                        <div class="col-xl-6 col-12">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <button type="submit"
+                                                            class="btn btn-primary btn-block waves-effect waves-light btn-lg">Đăng bài
+                                                    </button>
+                                                </div>
+                                                <div class="col-6">
+                                                    <button type="submit"
+                                                            class="btn btn-secondary btn-block waves-effect waves-light btn-lg">Huỷ
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
 
                 </div>
@@ -404,6 +448,22 @@
 
 <!-- Page level custom scripts -->
 <script src="js/demo/datatables-demo.js"></script>
+<!-- Plugins js -->
+
+
+<script src="vendor/bootstrap-select/bootstrap-select.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.1/js/dropify.min.js"></script>
+
+
+<!-- Init js-->
+<script src="js/pages/form-fileuploads.init.js"></script>
+
+<!-- Summernote js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.js"></script>
+
+<!-- Init js -->
+<script src="js/pages/form-summernote.init.js"></script>
 
 </body>
 

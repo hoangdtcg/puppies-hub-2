@@ -8,3 +8,10 @@
     -webkit-text-fill-color: transparent;
 }
 
+.dropify-wrapper .dropify-message span.file-icon p{
+    font-size: 30px;
+}
+
+.note-editor .note-btn.btn-sm{
+    font-size: 18px;
+}
