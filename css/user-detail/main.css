@@ -9,7 +9,7 @@
     /*.user-detail .user-detail-container {*/
     /*    height: 100vh;*/
     /*}*/
-    .user-detail .user-detail-left{
+    .user-detail .user-detail-left {
         padding-left: 100px;
     }
 }
@@ -226,4 +226,56 @@
     background-repeat: repeat;
     background-size: cover;
     border-radius: 10px;
+}
+/*Upload Image*/
+.user-detail .img-container {
+    border: 3px solid orange;
+    overflow: hidden;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.user-detail .img-container img {
+    width: initial;
+    height: auto;
+
+    max-width: initial;
+
+}
+
+.file-upload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.file-upload {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: .85em 1em;
+    background-color: #ff9900;
+    -ms-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+
+
+.file-upload input.file-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    height: 100%;
 }
